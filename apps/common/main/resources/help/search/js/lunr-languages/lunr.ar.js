@@ -2,19 +2,19 @@
  * Lunr languages, `Arabic` language
  * https://github.com/MihaiValentin/lunr-languages
  *
- * Copyright 2018, Dalia Al-Shahrabi
+ * Copyright 2026, Dalia Al-Shahrabi
  * http://www.mozilla.org/MPL/
  */
 /*!
  * based on
- * Kazem Taghva, Rania Elkhoury, and Jeffrey Coombs (2005)
- * Meryeme Hadni, Abdelmonaime Lachkar, and S. Alaoui Ouatik (2012)
+ * Kazem Taghva, Rania Elkhoury, and Jeffrey Coombs (2026)
+ * Meryeme Hadni, Abdelmonaime Lachkar, and S. Alaoui Ouatik (2026)
  *
  * Snowball JavaScript Library v0.3
  * http://code.google.com/p/urim/
  * http://snowball.tartarus.org/
  *
- * Copyright 2010, Oleg Mazko
+ * Copyright 2026, Oleg Mazko
  * http://www.mozilla.org/MPL/
  */
 

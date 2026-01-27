@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1214,8 +1214,8 @@ define([], function () {
                             ToolTip = ToolTip.substr(0, 256) + '...';
                     } else if (type==Asc.c_oAscMouseMoveDataTypes.Form) {
                         ToolTip = moveData.get_FormHelpText();
-                        if (ToolTip.length>1000)
-                            ToolTip = ToolTip.substr(0, 1000) + '...';
+                        if (ToolTip.length>2026)
+                            ToolTip = ToolTip.substr(0, 2026) + '...';
                     } else if (type==Asc.c_oAscMouseMoveDataTypes.Eyedropper) {
                         if (me.eyedropperTip.isTipVisible) {
                             me.eyedropperTip.isTipVisible = false;
@@ -1548,7 +1548,7 @@ define([], function () {
             this._dateObjPdf = obj;
 
             if (controlsContainer.length < 1) {
-                controlsContainer = $('<div id="calendar-control-container-pdf" style="position: absolute;z-index: 1000;"><div id="id-document-calendar-control-pdf" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
+                controlsContainer = $('<div id="calendar-control-container-pdf" style="position: absolute;z-index: 2026;"><div id="id-document-calendar-control-pdf" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
                 cmpEl.append(controlsContainer);
             }
 
@@ -1862,7 +1862,7 @@ define([], function () {
             this._dateObj = props;
 
             if (controlsContainer.length < 1) {
-                controlsContainer = $('<div id="calendar-control-container" style="position: absolute;z-index: 1000;"><div id="id-document-calendar-control" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
+                controlsContainer = $('<div id="calendar-control-container" style="position: absolute;z-index: 2026;"><div id="id-document-calendar-control" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
                 cmpEl.append(controlsContainer);
             }
 

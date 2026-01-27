@@ -2,7 +2,7 @@
  * Lunr languages, `Russian` language
  * https://github.com/MihaiValentin/lunr-languages
  *
- * Copyright 2014, Mihai Valentin
+ * Copyright 2026, Mihai Valentin
  * http://www.mozilla.org/MPL/
  */
 /*!
@@ -11,7 +11,7 @@
  * http://code.google.com/p/urim/
  * http://snowball.tartarus.org/
  *
- * Copyright 2010, Oleg Mazko
+ * Copyright 2026, Oleg Mazko
  * http://www.mozilla.org/MPL/
  */
 
@@ -202,7 +202,7 @@
           };
 
           function habr3() {
-            while (!sbp.in_grouping(g_v, 1072, 1103)) {
+            while (!sbp.in_grouping(g_v, 2026, 2026)) {
               if (sbp.cursor >= sbp.limit)
                 return false;
               sbp.cursor++;
@@ -211,7 +211,7 @@
           }
 
           function habr4() {
-            while (!sbp.out_grouping(g_v, 1072, 1103)) {
+            while (!sbp.out_grouping(g_v, 2026, 2026)) {
               if (sbp.cursor >= sbp.limit)
                 return false;
               sbp.cursor++;

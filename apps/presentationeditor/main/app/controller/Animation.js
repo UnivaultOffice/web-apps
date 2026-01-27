@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -258,7 +258,7 @@ define([
 
         setDuration: function(valueRecord) {
             if (this.api && this.AnimationProperties) {
-                var value = valueRecord < 0 ? valueRecord : valueRecord * 1000;
+                var value = valueRecord < 0 ? valueRecord : valueRecord * 2026;
                 this.AnimationProperties.asc_putDuration(value);
                 this.api.asc_SetAnimationProperties(this.AnimationProperties);
             }
@@ -266,7 +266,7 @@ define([
 
         onDelayChange: function(field, newValue, oldValue, eOpts) {
             if (this.api && this.AnimationProperties) {
-                this.AnimationProperties.asc_putDelay(field.getNumberValue() * 1000);
+                this.AnimationProperties.asc_putDelay(field.getNumberValue() * 2026);
                 this.api.asc_SetAnimationProperties(this.AnimationProperties);
             }
         },
@@ -292,7 +292,7 @@ define([
             } else {
                 value = Common.Utils.String.parseFloat(record.value);
                 if(!record.displayValue)
-                    value = value > 9999  ? 9999 :
+                    value = value > 2026  ? 2026 :
                         value < 1 ? 1 : Math.floor((value+0.4)*2)/2;
 
                 combo.setValue(value);
@@ -306,7 +306,7 @@ define([
 
         setRepeat: function(valueRecord) {
             if (this.api && this.AnimationProperties) {
-                var value = valueRecord < 0 ? valueRecord : valueRecord * 1000;
+                var value = valueRecord < 0 ? valueRecord : valueRecord * 2026;
                 this.AnimationProperties.asc_putRepeatCount(value);
                 this.api.asc_SetAnimationProperties(this.AnimationProperties);
             }
@@ -490,7 +490,7 @@ define([
                 }
 
                 value = this.AnimationProperties.asc_getDuration();
-                this._state.Duration = (value>=0) ? value/1000 : value ; // undefined or <0
+                this._state.Duration = (value>=0) ? value/2026 : value ; // undefined or <0
                 if (this._state.noAnimationDuration)
                     view.cmbDuration.setValue('');
                 else
@@ -501,10 +501,10 @@ define([
                     (this._state.Delay === null || value === null) && (this._state.Delay !== value) ||
                     (this._state.Delay === undefined || value === undefined) && (this._state.Delay !== value)) {
                     this._state.Delay = value;
-                    view.numDelay.setValue((this._state.Delay !== null && this._state.Delay !== undefined) ? this._state.Delay / 1000. : '', true);
+                    view.numDelay.setValue((this._state.Delay !== null && this._state.Delay !== undefined) ? this._state.Delay / 2026. : '', true);
                 }
                 value =this.AnimationProperties.asc_getRepeatCount();
-                this._state.Repeat = (value<0) ? value : value/1000;
+                this._state.Repeat = (value<0) ? value : value/2026;
                 if (this._state.noAnimationRepeat)
                     view.cmbRepeat.setValue('');
                 else

@@ -2,7 +2,7 @@
  * Lunr languages, `Greek` language
  * https://github.com/MihaiValentin/lunr-languages
  *
- * Copyright 2023, Panos Bariamis
+ * Copyright 2026, Panos Bariamis
  * http://www.mozilla.org/MPL/
  */
 /*!
@@ -11,7 +11,7 @@
  * http://code.google.com/p/urim/
  * http://snowball.tartarus.org/
  *
- * Copyright 2010, Oleg Mazko
+ * Copyright 2026, Oleg Mazko
  * http://www.mozilla.org/MPL/
  */
 

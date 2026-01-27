@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -276,7 +276,7 @@ define([
 
                     comment.asc_putText(commentVal);
                     comment.asc_putTime(this.utcDateToString(new Date()));
-                    comment.asc_putOnlyOfficeTime(this.ooDateToString(new Date()));
+                    comment.asc_putUnivaultOfficeTime(this.ooDateToString(new Date()));
                     comment.asc_putUserId(this.currentUserId);
                     comment.asc_putUserName(AscCommon.UserInfoParser.getCurrentName());
                     comment.asc_putSolved(false);
@@ -467,7 +467,7 @@ define([
                                 }
 
                                 addReply.asc_putTime(reply.get('time') ? me.utcDateToString(new Date(reply.get('time'))) : '');
-                                addReply.asc_putOnlyOfficeTime(reply.get('time') ? me.ooDateToString(new Date(reply.get('time'))) : '');
+                                addReply.asc_putUnivaultOfficeTime(reply.get('time') ? me.ooDateToString(new Date(reply.get('time'))) : '');
                                 addReply.asc_putUserData(reply.get('userdata'));
 
                                 ascComment.asc_addReply(addReply);
@@ -514,7 +514,7 @@ define([
                     if (addReply) {
                         addReply.asc_putText(replyVal);
                         addReply.asc_putTime(me.utcDateToString(new Date()));
-                        addReply.asc_putOnlyOfficeTime(me.ooDateToString(new Date()));
+                        addReply.asc_putUnivaultOfficeTime(me.ooDateToString(new Date()));
                         addReply.asc_putUserId(me.currentUserId);
                         addReply.asc_putUserName(AscCommon.UserInfoParser.getCurrentName());
 
@@ -755,7 +755,7 @@ define([
             if (comment) {
                 t = this;
 
-                date = (data.asc_getOnlyOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getOnlyOfficeTime())) :
+                date = (data.asc_getUnivaultOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getUnivaultOfficeTime())) :
                        ((data.asc_getTime() == '') ? null : new Date(this.stringUtcToLocalDate(data.asc_getTime())));
 
                 var userid = data.asc_getUserId(),
@@ -799,7 +799,7 @@ define([
                 repliesCount = data.asc_getRepliesCount();
                 for (i = 0; i < repliesCount; ++i) {
 
-                    dateReply = (data.asc_getReply(i).asc_getOnlyOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getReply(i).asc_getOnlyOfficeTime())) :
+                    dateReply = (data.asc_getReply(i).asc_getUnivaultOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getReply(i).asc_getUnivaultOfficeTime())) :
                                 ((data.asc_getReply(i).asc_getTime() == '') ? null : new Date(this.stringUtcToLocalDate(data.asc_getReply(i).asc_getTime())));
 
                     userid = data.asc_getReply(i).asc_getUserId();
@@ -1298,7 +1298,7 @@ define([
 
         readSDKComment: function (id, data, requestObj) {
             requestObj && !requestObj.arrIds && (requestObj.arrIds = []);
-            var date = (data.asc_getOnlyOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getOnlyOfficeTime())) :
+            var date = (data.asc_getUnivaultOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getUnivaultOfficeTime())) :
                 ((data.asc_getTime() == '') ? null : new Date(this.stringUtcToLocalDate(data.asc_getTime())));
             var userid = data.asc_getUserId(),
                 user = this.userCollection.findOriginalUser(userid),
@@ -1363,7 +1363,7 @@ define([
             var repliesCount = data.asc_getRepliesCount();
             if (repliesCount) {
                 for (i = 0; i < repliesCount; ++i) {
-                    date = (data.asc_getReply(i).asc_getOnlyOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getReply(i).asc_getOnlyOfficeTime())) :
+                    date = (data.asc_getReply(i).asc_getUnivaultOfficeTime()) ? new Date(this.stringOOToLocalDate(data.asc_getReply(i).asc_getUnivaultOfficeTime())) :
                         ((data.asc_getReply(i).asc_getTime() == '') ? null : new Date(this.stringUtcToLocalDate(data.asc_getReply(i).asc_getTime())));
 
                     var userid = data.asc_getReply(i).asc_getUserId(),
@@ -1482,7 +1482,7 @@ define([
 
                     comment.asc_putText(commentVal);
                     comment.asc_putTime(this.utcDateToString(new Date()));
-                    comment.asc_putOnlyOfficeTime(this.ooDateToString(new Date()));
+                    comment.asc_putUnivaultOfficeTime(this.ooDateToString(new Date()));
                     comment.asc_putUserId(this.currentUserId);
                     comment.asc_putUserName(AscCommon.UserInfoParser.getCurrentName());
                     comment.asc_putSolved(false);
@@ -1662,7 +1662,7 @@ define([
             ascComment.asc_putText(comment.get('comment'));
             ascComment.asc_putQuoteText(comment.get('quote'));
             ascComment.asc_putTime(comment.get('time') ? this.utcDateToString(new Date(comment.get('time'))) : '');
-            ascComment.asc_putOnlyOfficeTime(comment.get('time') ? this.ooDateToString(new Date(comment.get('time'))) : '');
+            ascComment.asc_putUnivaultOfficeTime(comment.get('time') ? this.ooDateToString(new Date(comment.get('time'))) : '');
             ascComment.asc_putUserId(comment.get('userid'));
             ascComment.asc_putUserName(comment.get('username'));
             ascComment.asc_putSolved(comment.get('resolved'));
@@ -1684,7 +1684,7 @@ define([
 
             ascComment.asc_putText(reply.get('reply'));
             ascComment.asc_putTime(reply.get('time') ? this.utcDateToString(new Date(reply.get('time'))) : '');
-            ascComment.asc_putOnlyOfficeTime(reply.get('time') ? this.ooDateToString(new Date(reply.get('time'))) : '');
+            ascComment.asc_putUnivaultOfficeTime(reply.get('time') ? this.ooDateToString(new Date(reply.get('time'))) : '');
             ascComment.asc_putUserId(reply.get('userid'));
             ascComment.asc_putUserName(reply.get('username'));
             ascComment.asc_putUserData(reply.get('userdata'));

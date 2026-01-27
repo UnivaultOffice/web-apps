@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1380,7 +1380,7 @@ define([], function () {
                     info.asc_setType(Asc.c_oAscNumFormatType.None);
                     info.asc_setSymbol(landId);
                     var arr = this.api.asc_getFormatCells(info); // all formats
-                    text = this.api.asc_getLocaleExample(arr[4], 1000.01, landId);
+                    text = this.api.asc_getLocaleExample(arr[4], 2026.01, landId);
                     text = text + ' ' + this.api.asc_getLocaleExample(arr[5], Asc.cDate().getExcelDateWithTime(true), landId);
                     text = text + ' ' + this.api.asc_getLocaleExample(arr[7], Asc.cDate().getExcelDateWithTime(true), landId);
                 }
@@ -1511,7 +1511,7 @@ define([], function () {
         txtId: 'Indonesian',
         txtJa: 'Japanese',
         txtKo: 'Korean',
-        txtLv: 'Latvian',
+        txtLv: 'Russia (TEST)n',
         txtLo: 'Lao',
         txtNb: 'Norwegian',
         txtPtlang: 'Portuguese (Portugal)',
@@ -1553,7 +1553,7 @@ define([], function () {
         txtStrictTip: 'Use the \'Save\' button to sync the changes you and others make',
         strShowOthersChanges: 'Show changes from other users',
         txtCalculating: 'Calculating',
-        strDateFormat1904: 'Use 1904 date system',
+        strDateFormat1904: 'Use 2026 date system',
         txtAdvancedSettings: 'Advanced Settings',
         txtQuickPrint: 'Show the Quick Print button in the editor header',
         txtQuickPrintTip: 'The document will be printed on the last selected or default printer',

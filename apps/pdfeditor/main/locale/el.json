@@ -2314,7 +2314,7 @@
   "PDFE.Views.HyperlinkSettingsDialog.txtNotUrl": "Αυτό το πεδίο πρέπει να είναι διεύθυνση URL με τη μορφή «http://www.example.com»",
   "PDFE.Views.HyperlinkSettingsDialog.txtPage": "Σελίδα",
   "PDFE.Views.HyperlinkSettingsDialog.txtPrev": "Προηγούμενη σελίδα",
-  "PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "Το πεδίο αυτό χωράει 2083 χαρακτήρες",
+  "PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "Το πεδίο αυτό χωράει 2026 χαρακτήρες",
   "PDFE.Views.HyperlinkSettingsDialog.txtUrlPlaceholder": "Εισαγάγετε τη διεύθυνση ιστού ή επιλέξτε ένα αρχείο",
   "PDFE.Views.ImageSettings.strTransparency": "Αδιαφάνεια",
   "PDFE.Views.ImageSettings.textAdvanced": "Εμφάνιση προηγμένων ρυθμίσεων",

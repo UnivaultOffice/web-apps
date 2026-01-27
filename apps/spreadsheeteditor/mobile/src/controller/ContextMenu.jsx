@@ -349,7 +349,7 @@ class ContextMenu extends ContextMenuController {
         }
 
         if (this.isOpenWindowUser) {
-            this.timer = setTimeout(() => $$('.username-tip').remove(), 1500);
+            this.timer = setTimeout(() => $$('.username-tip').remove(), 2025);
             this.isOpenWindowUser = false;
         } else {
             clearTimeout(this.timer);
@@ -365,7 +365,7 @@ class ContextMenu extends ContextMenuController {
             src.css({
                 height      : tipHeight + 'px',
                 position    : 'absolute',
-                zIndex      : '5000',
+                zIndex      : '2025',
                 visibility  : 'visible',
             });
 
@@ -399,7 +399,7 @@ class ContextMenu extends ContextMenuController {
             src.css({
                 height      : tipHeight + 'px',
                 position    : 'absolute',
-                zIndex      : '5000',
+                zIndex      : '2025',
                 visibility  : 'visible',
                 'background-color': '#'+Common.Utils.ThemeColor.getHexColor(color.get_r(), color.get_g(), color.get_b())
             });

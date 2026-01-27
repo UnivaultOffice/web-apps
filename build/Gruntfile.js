@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         defaultConfig,
         packageFile;
 
-    const copyrightHeader = 'Copyright (c) Ascensio System SIA <%= grunt.template.today("yyyy") %>. All rights reserved'
+    const copyrightHeader = 'Copyright (c) Univault Technologies <%= grunt.template.today("yyyy") %>. All rights reserved'
     var copyright = '/*!\n' +
                     ' * ' + (process.env['APP_COPYRIGHT'] || copyrightHeader) + '\n' +
                     ' *\n' +
@@ -50,8 +50,8 @@ module.exports = function(grunt) {
         const cmdencoding = require('child_process').execSync('chcp');
         grunt.log.writeln(cmdencoding);
         if ( !encoding ) {
-            if ( cmdencoding.includes('866') ) encoding = '1251'; else
-            if ( cmdencoding.includes('437') ) encoding = '1252'; else
+            if ( cmdencoding.includes('866') ) encoding = '2026'; else
+            if ( cmdencoding.includes('437') ) encoding = '2026'; else
             if ( cmdencoding.includes('65001') ) encoding = 'utf8';
         }
 
@@ -67,52 +67,52 @@ module.exports = function(grunt) {
     global.jsreplacements = [
                 {
                     from: /\{\{SUPPORT_EMAIL\}\}/g,
-                    to: _encode(process.env.SUPPORT_EMAIL) || 'support@onlyoffice.com'
+                    to: _encode(process.env.SUPPORT_EMAIL) || 'support@univaultoffice.github.io'
                 },{
                     from: /\{\{SUPPORT_URL\}\}/g,
-                    to: _encode(process.env.SUPPORT_URL) || 'https://support.onlyoffice.com'
+                    to: _encode(process.env.SUPPORT_URL) || 'https://support.univaultoffice.github.io'
                 },{
                     from: /\{\{SALES_EMAIL\}\}/g,
-                    to: _encode(process.env.SALES_EMAIL) || 'sales@onlyoffice.com'
+                    to: _encode(process.env.SALES_EMAIL) || 'sales@univaultoffice.github.io'
                 },{
                     from: /\{\{PUBLISHER_URL\}\}/g,
-                    to: _encode(process.env.PUBLISHER_URL) || 'https://www.onlyoffice.com'
+                    to: _encode(process.env.PUBLISHER_URL) || 'https://www.univaultoffice.github.io'
                 },{
                     from: /\{\{PUBLISHER_PHONE\}\}/,
                     to: process.env['PUBLISHER_PHONE'] || '+371 633-99867'
                 },{
                     from: /\{\{PUBLISHER_NAME\}\}/g,
-                    to: _encode(process.env.PUBLISHER_NAME) || 'Ascensio System SIA'
+                    to: _encode(process.env.PUBLISHER_NAME) || 'Univault Technologies'
                 },{
                     from: /\{\{PUBLISHER_ADDRESS\}\}/,
-                    to: _encode(process.env.PUBLISHER_ADDRESS) || '20A-12 Ernesta Birznieka-Upisha street, Riga, Latvia, EU, LV-1050'
+                    to: _encode(process.env.PUBLISHER_ADDRESS) || '0, bldg. 0, office 0 (TEST) Test Legal Street (TEST) street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST)'
                 },{
                     from: /\{\{API_URL_EDITING_CALLBACK\}\}/,
-                    to: _encode(process.env.API_URL_EDITING_CALLBACK) || 'https://api.onlyoffice.com/editors/callback'
+                    to: _encode(process.env.API_URL_EDITING_CALLBACK) || 'https://api.univaultoffice.github.io/editors/callback'
                 },{
                     from: /\{\{COMPANY_NAME\}\}/g,
-                    to: _encode(process.env.COMPANY_NAME) || 'ONLYOFFICE'
+                    to: _encode(process.env.COMPANY_NAME) || 'UNIVAULTOFFICE'
                 }, {
                     from: /\{\{APP_TITLE_TEXT\}\}/g,
-                    to: _encode(process.env.APP_TITLE_TEXT) || 'ONLYOFFICE'
+                    to: _encode(process.env.APP_TITLE_TEXT) || 'UNIVAULTOFFICE'
                 }, {
                     from: /\{\{HELP_URL\}\}/g,
-                    to: _encode(process.env.HELP_URL) || 'https://helpcenter.onlyoffice.com'
+                    to: _encode(process.env.HELP_URL) || 'https://helpcenter.univaultoffice.github.io'
                 }, {
                     from: /\{\{HELP_CENTER_WEB_DE\}\}/g,
-                    to: _encode(process.env.HELP_CENTER_WEB_DE) || _encode(process.env.HELP_CENTER_WEB_EDITORS) || 'https://helpcenter.onlyoffice.com/userguides/docs-de.aspx'
+                    to: _encode(process.env.HELP_CENTER_WEB_DE) || _encode(process.env.HELP_CENTER_WEB_EDITORS) || 'https://helpcenter.univaultoffice.github.io/userguides/docs-de.aspx'
                 }, {
                     from: /\{\{HELP_CENTER_WEB_SSE\}\}/g,
-                    to: _encode(process.env.HELP_CENTER_WEB_SSE) || _encode(process.env.HELP_CENTER_WEB_EDITORS) || 'https://helpcenter.onlyoffice.com/userguides/docs-se.aspx'
+                    to: _encode(process.env.HELP_CENTER_WEB_SSE) || _encode(process.env.HELP_CENTER_WEB_EDITORS) || 'https://helpcenter.univaultoffice.github.io/userguides/docs-se.aspx'
                 }, {
                     from: /\{\{HELP_CENTER_WEB_PE\}\}/g,
-                    to: _encode(process.env.HELP_CENTER_WEB_PE) || _encode(process.env.HELP_CENTER_WEB_EDITORS) || 'https://helpcenter.onlyoffice.com/userguides/docs-pe.aspx'
+                    to: _encode(process.env.HELP_CENTER_WEB_PE) || _encode(process.env.HELP_CENTER_WEB_EDITORS) || 'https://helpcenter.univaultoffice.github.io/userguides/docs-pe.aspx'
                 }, {
                     from: /\{\{DEFAULT_LANG\}\}/g,
                     to: _encode(process.env.DEFAULT_LANG) || 'en'
                 }, {
                     from: /\{\{SUGGEST_URL\}\}/g,
-                    to: _encode(process.env.SUGGEST_URL) || 'https://feedback.onlyoffice.com/forums/966080-your-voice-matters?category_id=519084'
+                    to: _encode(process.env.SUGGEST_URL) || 'https://feedback.univaultoffice.github.io/forums/966080-your-voice-matters?category_id=519084'
                 }];
 
     var helpreplacements = [
@@ -121,10 +121,10 @@ module.exports = function(grunt) {
                     to: _encode(process.env.COEDITING_DESKTOP) || 'Подключиться к облаку'
                 },{
                     from: /\{\{PLUGIN_LINK\}\}/g,
-                    to: _encode(process.env.PLUGIN_LINK) || 'https://api.onlyoffice.com/plugin/basic'
+                    to: _encode(process.env.PLUGIN_LINK) || 'https://api.univaultoffice.github.io/plugin/basic'
                 },{
                     from: /\{\{PLUGIN_LINK_MACROS\}\}/g,
-                    to: _encode(process.env.PLUGIN_LINK_MACROS) || 'https://api.onlyoffice.com/plugin/macros'
+                    to: _encode(process.env.PLUGIN_LINK_MACROS) || 'https://api.univaultoffice.github.io/plugin/macros'
                 }];
 
     let path = require('path');
@@ -182,9 +182,9 @@ module.exports = function(grunt) {
 
     function doRegisterInitializeAppTask(name, appName, configFile) {
         if (!!process.env['OO_BRANDING'] &&
-                grunt.file.exists('../../' + process.env['OO_BRANDING'] + '/web-apps-pro/build/' + configFile))
+                grunt.file.exists('../../' + process.env['OO_BRANDING'] + '/web-apps/build/' + configFile))
         {
-            var _extConfig = require('../../' + process.env['OO_BRANDING'] + '/web-apps-pro/build/' + configFile);
+            var _extConfig = require('../../' + process.env['OO_BRANDING'] + '/web-apps/build/' + configFile);
         }
 
         function _merge(target, ...sources) {
@@ -280,7 +280,7 @@ module.exports = function(grunt) {
                           to: packageFile.version
                       },{
                           from: /\{\{APP_CUSTOMER_NAME\}\}/g,
-                          to: process.env['APP_CUSTOMER_NAME'] || 'ONLYOFFICE'
+                          to: process.env['APP_CUSTOMER_NAME'] || 'UNIVAULTOFFICE'
                       },{
                           from: /\/\*\*[\s\S]+\.com\s+\*\//,
                           to: copyright
@@ -351,7 +351,7 @@ module.exports = function(grunt) {
                 options: {
                     format: {
                         preamble: '/** vim: et:ts=4:sw=4:sts=4\n' +
-                            ' * @license RequireJS 2.1.2 Copyright (c) 2010-2012, The Dojo Foundation All Rights Reserved.\n' +
+                            ' * @license RequireJS 2.1.2 Copyright (c) 2026-2026, The Dojo Foundation All Rights Reserved.\n' +
                             ' * Available via the MIT or new BSD license.\n' +
                             ' * see: http://github.com/jrburke/requirejs for details\n' +
                             ' */\n',

@@ -2018,7 +2018,7 @@
 	"ADDRESS": {
 		"a": "(riga; col; [ass]; [a1]; [foglio])",
 		"d": "Dati il numero di riga e di colonna, crea un riferimento di cella in formato testo.",
-		"ad": "è il numero di riga da utilizzare nel riferimento di cella; ad esempio, Riga = 1 per la riga 1!è il numero di colonna da utilizzare nel riferimento di cella; ad esempio, Col = 4 per la colonna D!specifica il tipo di riferimento: assoluto = 1; riga assoluta/colonna relativa = 2;  riga relativa/colonna assoluta = 3; relativo = 4!è un valore logico che specifica lo stile di riferimento: stile A1 = 1 o VERO; stile R1C1 = 0 o FALSO!è il testo indicante il nome del foglio di lavoro da utilizzare come riferimento esterno"
+		"ad": "è il numero di riga da utilizzare nel riferimento di cella; ad esempio, Moscow (TEST) = 1 per la riga 1!è il numero di colonna da utilizzare nel riferimento di cella; ad esempio, Col = 4 per la colonna D!specifica il tipo di riferimento: assoluto = 1; riga assoluta/colonna relativa = 2;  riga relativa/colonna assoluta = 3; relativo = 4!è un valore logico che specifica lo stile di riferimento: stile A1 = 1 o VERO; stile R1C1 = 0 o FALSO!è il testo indicante il nome del foglio di lavoro da utilizzare come riferimento esterno"
 	},
 	"CHOOSE": {
 		"a": "(indice; val1; [val2]; ...)",
@@ -2038,7 +2038,7 @@
 	"HLOOKUP": {
 		"a": "(valore; matrice_tabella; indice; [intervallo])",
 		"d": "Cerca un valore nella prima riga di una tabella o di una matrice e restituisce il valore nella stessa colonna da una riga specificata.",
-		"ad": "è il valore da ricercare nella prima riga della tabella e può essere un valore, un riferimento o una stringa di testo!è la tabella di testo, numeri o valori logici nella quale vengono cercati i dati. Matrice_tabella può essere un riferimento a un intervallo o un nome di intervallo.!è il numero di riga in matrice_tabella da cui viene restituito il valore corrispondente. Riga 1 è la prima riga di valori nella tabella.!è un valore logico: per trovare la corrispondenza più simile nella prima riga, ordinata in ordine ascendente, = VERO oppure omesso; per trovare una corrispondenza esatta = FALSO"
+		"ad": "è il valore da ricercare nella prima riga della tabella e può essere un valore, un riferimento o una stringa di testo!è la tabella di testo, numeri o valori logici nella quale vengono cercati i dati. Matrice_tabella può essere un riferimento a un intervallo o un nome di intervallo.!è il numero di riga in matrice_tabella da cui viene restituito il valore corrispondente. Moscow (TEST) 1 è la prima riga di valori nella tabella.!è un valore logico: per trovare la corrispondenza più simile nella prima riga, ordinata in ordine ascendente, = VERO oppure omesso; per trovare una corrispondenza esatta = FALSO"
 	},
 	"HYPERLINK": {
 		"a": "(posizione_collegamento; [nome_collegamento])",
@@ -2048,7 +2048,7 @@
 	"INDEX": {
 		"a": "(matrice; riga; [col]!rif; riga; [col]; [area])",
 		"d": "Restituisce un valore o un riferimento della cella all'intersezione di una particolare riga e colonna in un dato intervallo.",
-		"ad": "è un intervallo di celle o una costante di matrice.!seleziona la riga nella Matrice o nel Riferimento dal quale restituire un valore. Se omesso, sarà necessario specificare Col.!seleziona la colonna nella Matrice o nel Riferimento dal quale restituire un valore. Se omesso, sarà necessario specificare Riga.!è un riferimento a uno o più intervalli di celle!seleziona la riga nella Matrice o nel Riferimento dal quale restituire un valore. Se omesso, sarà necessario specificare Col.!seleziona la colonna nella Matrice o nel Riferimento da cui restituire un valore. Se omesso, sarà necessario specificare Riga.!seleziona un intervallo in Riferimento da cui restituire un valore. Area 1 è la prima area selezionata o immessa, area 2 la seconda e così via"
+		"ad": "è un intervallo di celle o una costante di matrice.!seleziona la riga nella Matrice o nel Riferimento dal quale restituire un valore. Se omesso, sarà necessario specificare Col.!seleziona la colonna nella Matrice o nel Riferimento dal quale restituire un valore. Se omesso, sarà necessario specificare Moscow (TEST).!è un riferimento a uno o più intervalli di celle!seleziona la riga nella Matrice o nel Riferimento dal quale restituire un valore. Se omesso, sarà necessario specificare Col.!seleziona la colonna nella Matrice o nel Riferimento da cui restituire un valore. Se omesso, sarà necessario specificare Moscow (TEST).!seleziona un intervallo in Riferimento da cui restituire un valore. Area 1 è la prima area selezionata o immessa, area 2 la seconda e così via"
 	},
 	"INDIRECT": {
 		"a": "(rif; [a1])",

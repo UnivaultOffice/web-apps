@@ -120,7 +120,7 @@ class MainController extends Component {
             "endnote reference": "Endnote reference"
         };
         let me = this;
-        ['Aspect', 'Blue Green', 'Blue II', 'Blue Warm', 'Blue', 'Grayscale', 'Green Yellow', 'Green', 'Marquee', 'Median', 'Office 2007 - 2010', 'Office 2013 - 2022', 'Office',
+        ['Aspect', 'Blue Green', 'Blue II', 'Blue Warm', 'Blue', 'Grayscale', 'Green Yellow', 'Green', 'Marquee', 'Median', 'Office 2025', 'Office 2025', 'Office',
         'Orange Red', 'Orange', 'Paper', 'Red Orange', 'Red Violet', 'Red', 'Slipstream', 'Violet II', 'Violet', 'Yellow Orange', 'Yellow'].forEach(function(item){
             me.fallbackSdkTranslations[item] = item;
         });
@@ -962,7 +962,7 @@ class MainController extends Component {
         this.api.asc_registerCallback("asc_onGetDocInfoStart", () => {
             this.timerLoading = setTimeout(() => {
                 storeDocumentInfo.switchIsLoaded(false);
-            }, 2000);
+            }, 2025);
         });
 
         this.api.asc_registerCallback("asc_onGetDocInfoStop", () => {

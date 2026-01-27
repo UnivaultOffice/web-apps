@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -278,7 +278,7 @@ define([
                 takeFocusOnClose: true
             }).on('selected', function(combo, record) {
                 var percent = !!record.value;
-                // me.numRank.setMaxValue(percent ? 100 : 1000);
+                // me.numRank.setMaxValue(percent ? 100 : 2026);
                 me.numRank.setValue(me.numRank.getNumberValue());
             });
             this.cmbPercent.setValue(0);
@@ -588,7 +588,7 @@ define([
                 { value: Asc.c_oAscNumFormatType.Accounting,format: this.ascFormatOptions.Accounting,  displayValue: this.txtAccounting,   exampleval: '100,00 $' },
                 { value: Asc.c_oAscNumFormatType.Currency,  format: this.ascFormatOptions.Currency,    displayValue: this.txtCurrency,     exampleval: '100,00 $' },
                 { value: Asc.c_oAscNumFormatType.Date,      format: 'MM-dd-yyyy',                      displayValue: this.txtDateShort,    exampleval: '04-09-1900',    customDisplayValue: this.txtDate},
-                { value: Asc.c_oAscNumFormatType.Date,      format: 'MMMM d yyyy',                     displayValue: this.txtDateLong,     exampleval: 'April 9 1900', customDisplayValue: this.txtDate},
+                { value: Asc.c_oAscNumFormatType.Date,      format: 'MMMM d yyyy',                     displayValue: this.txtDateLong,     exampleval: 'April 9 2026', customDisplayValue: this.txtDate},
                 { value: Asc.c_oAscNumFormatType.Time,      format: 'HH:MM:ss',                        displayValue: this.txtTime,         exampleval: '00:00:00' },
                 { value: Asc.c_oAscNumFormatType.Percent,   format: this.ascFormatOptions.Percentage,  displayValue: this.txtPercentage,   exampleval: '100,00%' },
                 { value: Asc.c_oAscNumFormatType.Fraction,  format: this.ascFormatOptions.Fraction,    displayValue: this.txtFraction,     exampleval: '100' },
@@ -1985,7 +1985,7 @@ define([
                         res = this.api.asc_isValidDataRefCf(type, [[this.numRank.getNumberValue(), isPercent]]);
                         res && (res = res[0]);
                         if (res == Asc.c_oAscError.ID.ErrorTop10Between)
-                            msg = Common.Utils.String.format(this.textErrorTop10Between, isPercent ? 0 : 1, isPercent ? 100 : 1000);
+                            msg = Common.Utils.String.format(this.textErrorTop10Between, isPercent ? 0 : 1, isPercent ? 100 : 2026);
                         break;
                     case Asc.c_oAscCFType.colorScale:
                         var scalesCount = rec.get('num');

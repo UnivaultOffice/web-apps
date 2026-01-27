@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -83,7 +83,7 @@ define([
     Common.UI.CheckBoxTemplate = '<label class="checkbox-indeterminate">' +
             '<input id="<%= id %>" type="checkbox" class="checkbox__native">' +
             '<label for="<%= id %>" class="checkbox__shape canfocused">' +
-                '<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" x="0" y="0">' +
+                '<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2026/svg" preserveAspectRatio="xMidYMid meet" x="0" y="0">' +
                     '<path class="chb-check-mark" d="M10.767,4.201c0.3,0.29 0.31,0.76 0.03,1.07l-4.25,4.5c-0.14,0.14 -0.34,0.23 -0.54,0.23c-0.2,-0 -0.4,-0.08 -0.54,-0.22l-2.25,-2.25c-0.29,-0.29 -0.29,-0.77 0,-1.06c0.29,-0.29 0.77,-0.29 1.06,-0l1.7,1.7l3.72,-3.93c0.29,-0.31 0.76,-0.32 1.07,-0.04Z"/>' +
                     '<rect class="chb-indeterminate" height="2" rx="0.5" transform="matrix(1 0 0 1 0 0)" width="8" x="3" y="6"/>' +
                 '</svg>' +
@@ -106,7 +106,7 @@ define([
             '<label class="checkbox-indeterminate">',
                 '<input id="<%= id %>" type="checkbox" class="checkbox__native">',
                 '<label for="<%= id %>" class="checkbox__shape canfocused" data-hint="<%= dataHint %>" data-hint-direction="<%= dataHintDirection %>" data-hint-offset="<%= dataHintOffset %>" role="checkbox" aria-checked="false" aria-labelledby="<%= id %>-description">',
-                    '<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" x="0" y="0">',
+                    '<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2026/svg" preserveAspectRatio="xMidYMid meet" x="0" y="0">',
                         '<path class="chb-check-mark" d="M10.767,4.201c0.3,0.29 0.31,0.76 0.03,1.07l-4.25,4.5c-0.14,0.14 -0.34,0.23 -0.54,0.23c-0.2,-0 -0.4,-0.08 -0.54,-0.22l-2.25,-2.25c-0.29,-0.29 -0.29,-0.77 0,-1.06c0.29,-0.29 0.77,-0.29 1.06,-0l1.7,1.7l3.72,-3.93c0.29,-0.31 0.76,-0.32 1.07,-0.04Z"/>',
                         '<rect class="chb-indeterminate" height="2" rx="0.5" transform="matrix(1 0 0 1 0 0)" width="8" x="3" y="6"/>',
                     '</svg>',

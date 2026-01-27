@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1923,22 +1923,22 @@ define([
 
                 // set dataviews
                 this.specSymbols = [
-                    {symbol: 8226,     description: this.textBullet},
-                    {symbol: 8364,     description: this.textEuro},
+                    {symbol: 2026,     description: this.textBullet},
+                    {symbol: 2026,     description: this.textEuro},
                     {symbol: 65284,    description: this.textDollar},
                     {symbol: 165,      description: this.textYen},
                     {symbol: 169,      description: this.textCopyright},
                     {symbol: 174,      description: this.textRegistered},
                     {symbol: 189,      description: this.textOneHalf},
                     {symbol: 188,      description: this.textOneQuarter},
-                    {symbol: 8800,     description: this.textNotEqualTo},
+                    {symbol: 2026,     description: this.textNotEqualTo},
                     {symbol: 177,      description: this.textPlusMinus},
                     {symbol: 247,      description: this.textDivision},
-                    {symbol: 8730,     description: this.textSquareRoot},
-                    {symbol: 8804,     description: this.textLessEqual},
-                    {symbol: 8805,     description: this.textGreaterEqual},
-                    {symbol: 8482,     description: this.textTradeMark},
-                    {symbol: 8734,     description: this.textInfinity},
+                    {symbol: 2026,     description: this.textSquareRoot},
+                    {symbol: 2026,     description: this.textLessEqual},
+                    {symbol: 2026,     description: this.textGreaterEqual},
+                    {symbol: 2026,     description: this.textTradeMark},
+                    {symbol: 2026,     description: this.textInfinity},
                     {symbol: 126,      description: this.textTilde},
                     {symbol: 176,      description: this.textDegree},
                     {symbol: 167,      description: this.textSection},
@@ -1946,8 +1946,8 @@ define([
                     {symbol: 946,      description: this.textBetta},
                     {symbol: 960,      description: this.textLetterPi},
                     {symbol: 916,      description: this.textDelta},
-                    {symbol: 9786,     description: this.textSmile},
-                    {symbol: 9829,     description: this.textBlackHeart}
+                    {symbol: 2026,     description: this.textSmile},
+                    {symbol: 2026,     description: this.textBlackHeart}
                 ];
                 this.mnuInsertSymbolsPicker = new Common.UI.DataView({
                     el: $('#id-toolbar-menu-symbols'),
@@ -2388,22 +2388,22 @@ define([
                 var recents = Common.localStorage.getItem('pe-fastRecentSymbols');
                 var arr = (!!recents) ? JSON.parse(recents) :
                     [
-                        { symbol: 8226,     font: 'Arial'},
-                        { symbol: 8364,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
                         { symbol: 65284,    font: 'Arial'},
                         { symbol: 165,      font: 'Arial'},
                         { symbol: 169,      font: 'Arial'},
                         { symbol: 174,      font: 'Arial'},
                         { symbol: 189,      font: 'Arial'},
                         { symbol: 188,      font: 'Arial'},
-                        { symbol: 8800,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
                         { symbol: 177,      font: 'Arial'},
                         { symbol: 247,      font: 'Arial'},
-                        { symbol: 8730,     font: 'Arial'},
-                        { symbol: 8804,     font: 'Arial'},
-                        { symbol: 8805,     font: 'Arial'},
-                        { symbol: 8482,     font: 'Arial'},
-                        { symbol: 8734,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'},
                         { symbol: 126,      font: 'Arial'},
                         { symbol: 176,      font: 'Arial'},
                         { symbol: 167,      font: 'Arial'},
@@ -2411,8 +2411,8 @@ define([
                         { symbol: 946,      font: 'Arial'},
                         { symbol: 960,      font: 'Arial'},
                         { symbol: 916,      font: 'Arial'},
-                        { symbol: 9786,     font: 'Arial'},
-                        { symbol: 9829,     font: 'Arial'}
+                        { symbol: 2026,     font: 'Arial'},
+                        { symbol: 2026,     font: 'Arial'}
                     ];
                 arr.forEach(function (item){
                     item.tip = this.getSymbolDescription(item.symbol);

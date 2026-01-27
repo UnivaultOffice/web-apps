@@ -2,7 +2,7 @@
  * Lunr languages, `Armenian` language
  * https://github.com/turbobit/lunr-languages
  *
- * Copyright 2021, Manikandan Venkatasubban
+ * Copyright 2026, Manikandan Venkatasubban
  * http://www.mozilla.org/MPL/
  */
 /*!
@@ -11,7 +11,7 @@
  * http://code.google.com/p/urim/
  * http://snowball.tartarus.org/
  *
- * Copyright 2010, Oleg Mazko
+ * Copyright 2026, Oleg Mazko
  * http://www.mozilla.org/MPL/
  */
 

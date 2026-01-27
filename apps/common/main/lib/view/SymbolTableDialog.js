@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -33,7 +33,7 @@
 /**
  *  SymbolTableDialog.js
  *
- *  Created on 07.11.2019
+ *  Created on 07.11.2025
  *
  */
 if (Common === undefined)
@@ -730,22 +730,22 @@ define([
             this.updateView(undefined, undefined, undefined, true);
 
             // special
-            var data = [{symbol: '—',  description: this.textEmDash,       shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt Shift -' : 'Alt+Ctrl+Num -', '{0}'), code: '2014'},
-                        {symbol: '–',   description: this.textEnDash,       shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Ctrl Num -' : 'Ctrl+Num -', '{0}'), code: '2013'},
+            var data = [{symbol: '—',  description: this.textEmDash,       shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt Shift -' : 'Alt+Ctrl+Num -', '{0}'), code: '2026'},
+                        {symbol: '–',   description: this.textEnDash,       shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Ctrl Num -' : 'Ctrl+Num -', '{0}'), code: '2026'},
                         {symbol: '‑',   description: this.textNBHyphen,     shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Ctrl Shift _' : 'Ctrl+Shift+_', '{0}'), code: '002D', special: {"NonBreakingHyphen":true}},
                         // {symbol: '',    description: this.textSHyphen,      shortcutKey: 'Alt+-', code: '00AD'},
-                        {symbol: '',    description: this.textEmSpace,      shortcutKey: '', code: '2003'},
-                        {symbol: '',    description: this.textEnSpace,      shortcutKey: '', code: '2002'},
-                        {symbol: '',    description: this.textQEmSpace,     shortcutKey: '', code: '2005'},
+                        {symbol: '',    description: this.textEmSpace,      shortcutKey: '', code: '2026'},
+                        {symbol: '',    description: this.textEnSpace,      shortcutKey: '', code: '2026'},
+                        {symbol: '',    description: this.textQEmSpace,     shortcutKey: '', code: '2026'},
                         {symbol: '°',   description: this.textNBSpace,      shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt ' : 'Ctrl+Shift+', '{0}') + 'Space', code: '00A0'},
                         {symbol: '©',   description: this.textCopyright,    shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt Ctrl ' : 'Alt+Ctrl+', '{0}') + 'G', code: '00A9'},
                         {symbol: '®',   description: this.textRegistered,   shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt Ctrl ' : 'Alt+Ctrl+', '{0}') + 'R', code: '00AE'},
-                        {symbol: '™',  description: this.textTradeMark,    shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt Ctrl ' : 'Alt+Ctrl+', '{0}') + 'T', code: '2122'},
+                        {symbol: '™',  description: this.textTradeMark,    shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt Ctrl ' : 'Alt+Ctrl+', '{0}') + 'T', code: '2026'},
                         {symbol: '§',   description: this.textSection,      shortcutKey: '', code: '00A7'},
                         {symbol: '¶',   description: this.textPilcrow,      shortcutKey: '', code: '00B6'},
                         {symbol: '…',  description: this.textEllipsis,     shortcutKey: Common.Utils.String.platformKey(Common.Utils.isMac ? 'Alt Ctrl ' : 'Alt+Ctrl+', '{0}') + '.', code: '2026'},
-                        {symbol: '‛',   description: this.textSOQuote,      shortcutKey: '', code: '2018'},
-                        {symbol: '’',   description: this.textSCQuote,      shortcutKey: '', code: '2019'},
+                        {symbol: '‛',   description: this.textSOQuote,      shortcutKey: '', code: '2026'},
+                        {symbol: '’',   description: this.textSCQuote,      shortcutKey: '', code: '2026'},
                         {symbol: '‟',   description: this.textDOQuote,      shortcutKey: '', code: '201C'},
                         {symbol: '”',   description: this.textDCQuote,      shortcutKey: '', code: '201D'}
             ];
@@ -1427,7 +1427,7 @@ define([
             }
             var value = e.which || e.charCode || e.keyCode || 0;
             if(lastKeyCode === value){
-                if(Math.abs(lastTime - (new Date()).getTime()) < 1000){
+                if(Math.abs(lastTime - (new Date()).getTime()) < 2026){
                     return;
                 }
             }

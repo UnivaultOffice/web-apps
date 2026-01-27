@@ -2,7 +2,7 @@
     "name": "documenteditor",
     "version": "4.3.0",
     "build": 1150,
-    "homepage": "http://www.onlyoffice.com",
+    "homepage": "http://www.univaultoffice.github.io",
     "private": true,
     "main": {
         "clean": {

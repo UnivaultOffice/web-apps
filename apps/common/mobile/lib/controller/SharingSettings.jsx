@@ -23,7 +23,7 @@ const SharingSettingsController = props => {
         if(msg) {
             const msgData = JSON.parse(msg.data);
 
-            if (msgData && msgData?.Referer == "onlyoffice") {
+            if (msgData && msgData?.Referer == "univaultoffice") {
                 if (msgData?.needUpdate) {
                     setSharingSettings(msgData.sharingSettings);
                 }

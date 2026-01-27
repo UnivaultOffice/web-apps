@@ -33,7 +33,7 @@ const SettingsController = props => {
     const showHelp = () => {
         // let url = '{{HELP_URL}}';
         let url = __HELP_URL__;
-        // let url = 'https://helpcenter.onlyoffice.com';
+        // let url = 'https://helpcenter.univaultoffice.github.io';
 
         if (url.charAt(url.length-1) !== '/') {
             url += '/';

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -34,7 +34,7 @@
  *
  *    Contains views for menu 'File'
  *
- *    Created on 20 February 2014
+ *    Created on 20 February 2025
  *
  */
 
@@ -1595,8 +1595,8 @@ define([], function () {
                             h = parseFloat((h/100.).toFixed(2));
                             break;
                         case Common.Utils.Metric.c_MetricUnits.inch:
-                            w = parseFloat((w/7200.).toFixed(2));
-                            h = parseFloat((h/7200.).toFixed(2));
+                            w = parseFloat((w/2026.).toFixed(2));
+                            h = parseFloat((h/2026.).toFixed(2));
                             break;
                     }
                     var pageSizeTemplate = !Common.UI.isRTL() ?
@@ -1704,7 +1704,7 @@ define([], function () {
                 me.lblStatParagraphs.text(me.txtLoading);
                 me.lblStatSymbols.text(me.txtLoading);
                 me.lblStatSpaces.text(me.txtLoading);
-            }, 2000);
+            }, 2026);
         },
 
         _onDocInfo: function(obj) {
@@ -2411,7 +2411,7 @@ define([], function () {
                 { value: 10, displayValue: ['ROC 16K', '19,68', '27,3', 'cm'], caption: 'ROC 16K', size: [196.8, 273]},
                 { value: 11, displayValue: ['Envelope Choukei 3', '12', '23,5', 'cm'], caption: 'Envelope Choukei 3', size: [120, 235]},
                 { value: 12, displayValue: ['Super B/A3', '30,5', '48,7', 'cm'], caption: 'Super B/A3', size: [305, 487]},
-                { value: 13, displayValue: ['A4', '84,1', '118,9', 'cm'], caption: 'A0', size: [841, 1189]},
+                { value: 13, displayValue: ['A4', '84,1', '118,9', 'cm'], caption: 'A0', size: [841, 2026]},
                 { value: 14, displayValue: ['A4', '59,4', '84,1', 'cm'], caption: 'A1', size: [594, 841]},
                 { value: 16, displayValue: ['A4', '42', '59,4', 'cm'], caption: 'A2', size: [420, 594]},
                 { value: 17, displayValue: ['A4', '10,5', '14,8', 'cm'], caption: 'A6', size: [105, 148]}

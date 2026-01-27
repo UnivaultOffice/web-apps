@@ -33,7 +33,7 @@ const SettingsController = inject('storeAppOptions', 'storeSpreadsheetInfo')(obs
 
     const showHelp = () => {
         // let url = '{{HELP_URL}}';
-        // let url = 'https://helpcenter.onlyoffice.com';
+        // let url = 'https://helpcenter.univaultoffice.github.io';
         let url = __HELP_URL__;
 
         if (url.charAt(url.length-1) !== '/') {

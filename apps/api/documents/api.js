@@ -1,7 +1,7 @@
 /**
- * Copyright (c) Ascensio System SIA 2013. All rights reserved
+ * Copyright (c) Univault Technologies 2026. All rights reserved
  *
- * http://www.onlyoffice.com
+ * http://www.univaultoffice.github.io
  */
 
 ;(function(DocsAPI, window, document, undefined) {

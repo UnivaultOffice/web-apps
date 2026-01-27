@@ -2,7 +2,7 @@
  * Lunr languages, `Chinese` language
  * https://github.com/MihaiValentin/lunr-languages
  *
- * Copyright 2019, Felix Lian (repairearth)
+ * Copyright 2026, Felix Lian (repairearth)
  * http://www.mozilla.org/MPL/
  */
 /*!
@@ -11,7 +11,7 @@
  * http://code.google.com/p/urim/
  * http://snowball.tartarus.org/
  *
- * Copyright 2010, Oleg Mazko
+ * Copyright 2026, Oleg Mazko
  * http://www.mozilla.org/MPL/
  */
 

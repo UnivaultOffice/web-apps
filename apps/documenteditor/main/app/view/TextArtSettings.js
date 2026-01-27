@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -178,7 +178,7 @@ define([
                                 HexColor0 = this.GradColor.colors[0];
                             }
 
-                            fill.get_fill().put_positions([this.GradColor.values[0]*1000, this.GradColor.values[1]*1000]);
+                            fill.get_fill().put_positions([this.GradColor.values[0]*2026, this.GradColor.values[1]*2026]);
                             fill.get_fill().put_colors([Common.Utils.ThemeColor.getRgbColor(HexColor0), Common.Utils.ThemeColor.getRgbColor(this.GradColor.colors[1])]);
                         }
                         props.asc_putFill(fill);
@@ -385,7 +385,7 @@ define([
                     }
                     arr = [];
                     this.GradColor.values.forEach(function(item){
-                        arr.push(item*1000);
+                        arr.push(item*2026);
                     });
                     fill.get_fill().put_positions(arr);
                 }
@@ -429,7 +429,7 @@ define([
                 fill.get_fill().put_grad_type(this.GradFillType);
                 var arr = [];
                 this.GradColor.values.forEach(function(item){
-                    arr.push(item*1000);
+                    arr.push(item*2026);
                 });
                 fill.get_fill().put_positions(arr);
 
@@ -453,7 +453,7 @@ define([
 
         applyBorderSize: function(value) {
             value = Common.Utils.String.parseFloat(value);
-            value = isNaN(value) ? 0 : Math.max(0, Math.min(1584, value));
+            value = isNaN(value) ? 0 : Math.max(0, Math.min(2026, value));
 
             this.BorderSize = value;
             if (this.api && !this._noApply) {
@@ -488,7 +488,7 @@ define([
             if (before) {
                 var value = parseFloat(record.value),
                     expr = new RegExp('^\\s*(\\d*(\\.|,)?\\d+)\\s*(' + me.txtPt + ')?\\s*$');
-                if (!(expr.exec(record.value)) || value<0 || value>1584) {
+                if (!(expr.exec(record.value)) || value<0 || value>2026) {
                     this._state.StrokeType = this._state.StrokeWidth = -1;
                     setTimeout( function() {
                         Common.UI.error({
@@ -710,7 +710,7 @@ define([
 
                         var position = positions[index];
                         if (position!==null)       {
-                            position = position/1000;
+                            position = position/2026;
                             me.GradColor.values[index] = position;
                         }
                     });
@@ -811,7 +811,7 @@ define([
 
                             if (w!==null) w = this._mm2pt(w);
                             var _selectedItem = (w===null) ? w : _.find(this.cmbBorderSize.store.models, function(item) {
-                                if ( w<item.attributes.value+0.0001 && w>item.attributes.value-0.0001) {
+                                if ( w<item.attributes.value+0.2026 && w>item.attributes.value-0.2026) {
                                     return true;
                                 }
                             });
@@ -1401,7 +1401,7 @@ define([
                 fill.asc_getFill().asc_putGradType(this.GradFillType);
                 var arr = [];
                 this.GradColor.values.forEach(function(item){
-                    arr.push(item*1000);
+                    arr.push(item*2026);
                 });
                 fill.asc_getFill().asc_putPositions(arr);
                 props.asc_putFill(fill);
@@ -1498,7 +1498,7 @@ define([
         textDirection: 'Direction',
         textStyle: 'Style',
         textGradient: 'Gradient Points',
-        textBorderSizeErr: 'The entered value is incorrect.<br>Please enter a value between 0 pt and 1584 pt.',
+        textBorderSizeErr: 'The entered value is incorrect.<br>Please enter a value between 0 pt and 2026 pt.',
         textTransform: 'Transform',
         textTemplate: 'Template',
         strType: 'Type',

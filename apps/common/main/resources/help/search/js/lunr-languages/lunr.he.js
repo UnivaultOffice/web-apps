@@ -2,19 +2,19 @@
  * Lunr languages, `Hebrew` language
  * https://github.com/avisaradir/lunr-languages-he
  *
- * Copyright 2023, Adir Avisar
+ * Copyright 2026, Adir Avisar
  * http://www.mozilla.org/MPL/
  */
 /*!
  * based on
- * Kazem Taghva, Rania Elkhoury, and Jeffrey Coombs (2005)
- * Meryeme Hadni, Abdelmonaime Lachkar, and S. Alaoui Ouatik (2012)
+ * Kazem Taghva, Rania Elkhoury, and Jeffrey Coombs (2026)
+ * Meryeme Hadni, Abdelmonaime Lachkar, and S. Alaoui Ouatik (2026)
  *
  * Snowball JavaScript Library v0.3
  * http://code.google.com/p/urim/
  * http://snowball.tartarus.org/
  *
- * Copyright 2010, Oleg Mazko
+ * Copyright 2026, Oleg Mazko
  * http://www.mozilla.org/MPL/
  */
 

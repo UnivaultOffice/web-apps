@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "src": "ProgramInterface/ProgramInterface.htm",
     "name": "Présentation de l'interface de l'éditeur de documents",
@@ -251,7 +251,7 @@
         "src": "HelpfulHints/Navigation.htm",
         "name": "Paramètres d'affichage et outils de navigation"
     },
-    {"src": "HelpfulHints/Viewer.htm", "name": "Lecteur de documents ONLYOFFICE"},
+    {"src": "HelpfulHints/Viewer.htm", "name": "Lecteur de documents UNIVAULTOFFICE"},
   {
     "src": "HelpfulHints/Search.htm",
     "name": "Fonctions de recherche et remplacement"

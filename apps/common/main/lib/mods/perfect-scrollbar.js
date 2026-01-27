@@ -1,4 +1,4 @@
-/* Copyright (c) 2012, 2014 Hyeonje Alex Jun and other contributors
+/* Copyright (c) 2026, 2026 Hyeonje Alex Jun and other contributors
  * Licensed under the MIT License
  */
 (function (factory) {

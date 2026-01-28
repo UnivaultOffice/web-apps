@@ -1414,7 +1414,7 @@ ApiCustomXmlNode.prototype.GetAttribute = function(name){ return ""; };
  *   "Mark Pottato": {
  *     comments: [
  *       { IsAnswer: false, CommentMessage: "Need to change this part", Date: 1688587967245, DateUTC: 1688569967245, QuoteText: "The quick brown fox jumps over the lazy dog" },
- *       { IsAnswer: false, CommentMessage: "We need to add a link", Date: 1688587967245, DateUTC: 1688569967245, QuoteText: "OnlyOffice" }
+ *       { IsAnswer: false, CommentMessage: "We need to add a link", Date: 1688587967245, DateUTC: 1688569967245, QuoteText: "UnivaultOffice" }
  *     ]
  *   }
  * }
@@ -1477,7 +1477,7 @@ ApiCustomXmlNode.prototype.GetAttribute = function(name){ return ""; };
  * {
  *   "key" : "CompanyName",
  *   "tag" : "companyName",
- *   "value" : "ONLYOFFICE",
+ *   "value" : "UNIVAULTOFFICE",
  *   "type" : "text"
  * }
  */

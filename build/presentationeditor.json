@@ -1,7 +1,7 @@
 {
     "name": "presentationeditor",
     "version": "4.3.0",
-    "build": 790,
+    "build": 794,
     "homepage": "http://www.univaultoffice.github.io",
     "private": true,
     "main": {

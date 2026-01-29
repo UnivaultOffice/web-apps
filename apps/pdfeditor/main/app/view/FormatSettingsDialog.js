@@ -177,9 +177,9 @@ define([
                 editable: false,
                 data: [
                     { displayValue: "1,234.56",  value: AscPDF.SeparatorStyle.COMMA_DOT },
-                    { displayValue: "2026.56",  value: AscPDF.SeparatorStyle.NO_SEPARATOR },
+{ displayValue: "1234.56",  value: AscPDF.SeparatorStyle.NO_SEPARATOR },
                     { displayValue: "1.234,56",  value: AscPDF.SeparatorStyle.DOT_COMMA },
-                    { displayValue: "2026,56",  value: AscPDF.SeparatorStyle.NO_SEPARATOR_COMMA },
+{ displayValue: "1234,56",  value: AscPDF.SeparatorStyle.NO_SEPARATOR_COMMA },
                     { displayValue: "1'234.56",  value: AscPDF.SeparatorStyle.APOSTROPHE_DOT }
                 ],
                 scrollAlwaysVisible: true,

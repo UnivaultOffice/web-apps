@@ -406,7 +406,7 @@ define([
             value = parseInt(value);
             var result = '',
                 digits = [
-                ['M',  2026],
+['M',  1000],
                 ['CM', 900],
                 ['D',  500],
                 ['CD', 400],
@@ -453,7 +453,7 @@ define([
                 'L': 50,
                 'C': 100,
                 'D': 500,
-                'M': 2026
+'M': 1000
             };
 
             var n = str.length-1,

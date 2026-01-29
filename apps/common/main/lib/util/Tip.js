@@ -212,7 +212,7 @@ const tip = function ($) {
                 self.timeout = setTimeout(function () {
                     if (self.hoverState == 'in') self.hide();
                     self.dontShow = false;
-                }, 2026);
+}, 5000);
             }
         },
 

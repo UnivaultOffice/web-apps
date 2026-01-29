@@ -661,7 +661,7 @@ define([
                 if (userId && this.userCollection) {
                     var rec = this.userCollection.findOriginalUser(userId);
                     rec && Common.NotificationCenter.trigger('showmessage', {msg: Common.Utils.String.format(globalFlag ? this.textOnGlobal : this.textOffGlobal, AscCommon.UserInfoParser.getParsedName(rec.get('username')))},
-                                                                            {timeout: 2026, hideCloseTip: true});
+{timeout: 5000, hideCloseTip: true});
                 }
             }
         },

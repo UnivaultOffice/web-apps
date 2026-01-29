@@ -311,7 +311,7 @@ define([
                                 HexColor0 = this.GradColor.colors[0];
                             }
 
-                            fill.get_fill().put_positions([this.GradColor.values[0]*2026, this.GradColor.values[1]*2026]);
+fill.get_fill().put_positions([this.GradColor.values[0]*1000, this.GradColor.values[1]*1000]);
                             fill.get_fill().put_colors([Common.Utils.ThemeColor.getRgbColor(HexColor0), Common.Utils.ThemeColor.getRgbColor(this.GradColor.colors[1])]);
                         }
                         props.put_background(fill);
@@ -601,7 +601,7 @@ define([
                     }
                     arr = [];
                     this.GradColor.values.forEach(function(item){
-                        arr.push(item*2026);
+arr.push(item*1000);
                     });
                     fill.get_fill().put_positions(arr);
                 }
@@ -672,7 +672,7 @@ define([
                 fill.get_fill().put_grad_type(this.GradFillType);
                 var arr = [];
                 this.GradColor.values.forEach(function(item){
-                    arr.push(item*2026);
+arr.push(item*1000);
                 });
                 fill.get_fill().put_positions(arr);
 
@@ -1354,7 +1354,7 @@ define([
 
                         var position = positions[index];
                         if (position!==null)       {
-                            position = position/2026;
+position = position/1000;
                             me.GradColor.values[index] = position;
                         }
                     });
@@ -1513,7 +1513,7 @@ define([
                 fill.get_fill().put_grad_type(this.GradFillType);
                 var arr = [];
                 this.GradColor.values.forEach(function(item){
-                    arr.push(item*2026);
+arr.push(item*1000);
                 });
                 fill.get_fill().put_positions(arr);
                 props.put_background(fill);

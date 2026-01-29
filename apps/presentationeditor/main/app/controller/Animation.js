@@ -258,7 +258,7 @@ define([
 
         setDuration: function(valueRecord) {
             if (this.api && this.AnimationProperties) {
-                var value = valueRecord < 0 ? valueRecord : valueRecord * 2026;
+var value = valueRecord < 0 ? valueRecord : valueRecord * 1000;
                 this.AnimationProperties.asc_putDuration(value);
                 this.api.asc_SetAnimationProperties(this.AnimationProperties);
             }
@@ -266,7 +266,7 @@ define([
 
         onDelayChange: function(field, newValue, oldValue, eOpts) {
             if (this.api && this.AnimationProperties) {
-                this.AnimationProperties.asc_putDelay(field.getNumberValue() * 2026);
+this.AnimationProperties.asc_putDelay(field.getNumberValue() * 1000);
                 this.api.asc_SetAnimationProperties(this.AnimationProperties);
             }
         },
@@ -292,7 +292,7 @@ define([
             } else {
                 value = Common.Utils.String.parseFloat(record.value);
                 if(!record.displayValue)
-                    value = value > 2026  ? 2026 :
+value = value > 9999  ? 9999 :
                         value < 1 ? 1 : Math.floor((value+0.4)*2)/2;
 
                 combo.setValue(value);
@@ -306,7 +306,7 @@ define([
 
         setRepeat: function(valueRecord) {
             if (this.api && this.AnimationProperties) {
-                var value = valueRecord < 0 ? valueRecord : valueRecord * 2026;
+var value = valueRecord < 0 ? valueRecord : valueRecord * 1000;
                 this.AnimationProperties.asc_putRepeatCount(value);
                 this.api.asc_SetAnimationProperties(this.AnimationProperties);
             }
@@ -490,7 +490,7 @@ define([
                 }
 
                 value = this.AnimationProperties.asc_getDuration();
-                this._state.Duration = (value>=0) ? value/2026 : value ; // undefined or <0
+this._state.Duration = (value>=0) ? value/1000 : value ; // undefined or <0
                 if (this._state.noAnimationDuration)
                     view.cmbDuration.setValue('');
                 else
@@ -501,10 +501,10 @@ define([
                     (this._state.Delay === null || value === null) && (this._state.Delay !== value) ||
                     (this._state.Delay === undefined || value === undefined) && (this._state.Delay !== value)) {
                     this._state.Delay = value;
-                    view.numDelay.setValue((this._state.Delay !== null && this._state.Delay !== undefined) ? this._state.Delay / 2026. : '', true);
+view.numDelay.setValue((this._state.Delay !== null && this._state.Delay !== undefined) ? this._state.Delay / 1000. : '', true);
                 }
                 value =this.AnimationProperties.asc_getRepeatCount();
-                this._state.Repeat = (value<0) ? value : value/2026;
+this._state.Repeat = (value<0) ? value : value/1000;
                 if (this._state.noAnimationRepeat)
                     view.cmbRepeat.setValue('');
                 else

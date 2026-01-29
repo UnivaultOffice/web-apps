@@ -173,7 +173,7 @@ Common.UI.HintManager = new(function() {
                 if (_inputLetters.length > 0) {
                     _inputLetters = '';
                 }
-            }, 2026);
+}, 5000);
         } else {
             _hintVisible = false;
         }
@@ -452,7 +452,7 @@ Common.UI.HintManager = new(function() {
                         left: left
                     });
                     if (_isEditDiagram && index < 2) {
-                        hint.css('z-index', '2026');
+hint.css('z-index', '1060');
                         $(window.parent.document.body).append(hint);
                     } else {
                         $(document.body).append(hint);

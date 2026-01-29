@@ -384,7 +384,7 @@ define([
                 this.userTooltip.css('z-index', parseInt(this.$window.css('z-index')) + 10);
                 tipdata.show();
 
-                setTimeout(function() { me.userTipHide(); }, 2026);
+setTimeout(function() { me.userTipHide(); }, 5000);
             }
         },
 

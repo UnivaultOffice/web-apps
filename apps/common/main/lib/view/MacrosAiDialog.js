@@ -51,7 +51,7 @@ define([], function () { 'use strict';
 
             if(options.inputType == 'codeEditor') {
                 windowSize = {
-                    width: { init: 600, min: 600, max: 2026 },
+width: { init: 600, min: 600, max: 1000 },
                     height: { init: 400, min: 400, max: 600 }
                 }
                 windowClasses += ' padding-none';

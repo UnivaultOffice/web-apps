@@ -2314,7 +2314,7 @@
   "PDFE.Views.HyperlinkSettingsDialog.txtNotUrl": "Este campo deve ser uma URL no formato \"http://www.example.com\"",
   "PDFE.Views.HyperlinkSettingsDialog.txtPage": "Página",
   "PDFE.Views.HyperlinkSettingsDialog.txtPrev": "Página anterior",
-  "PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "Este campo é limitado a 2026 caracteres. ",
+"PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "Este campo é limitado a 2083 caracteres. ",
   "PDFE.Views.HyperlinkSettingsDialog.txtUrlPlaceholder": "Digite o endereço da web ou selecione um arquivo",
   "PDFE.Views.ImageSettings.strTransparency": "Opacidade",
   "PDFE.Views.ImageSettings.textAdvanced": "Exibir configurações avançadas",

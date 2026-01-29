@@ -204,7 +204,7 @@ define([
                                 HexColor0 = this.GradColor.colors[0];
                             }
 
-                            fill.asc_getFill().asc_putPositions([this.GradColor.values[0]*2026, this.GradColor.values[1]*2026]);
+fill.asc_getFill().asc_putPositions([this.GradColor.values[0]*1000, this.GradColor.values[1]*1000]);
                             fill.asc_getFill().asc_putColors([Common.Utils.ThemeColor.getRgbColor(HexColor0), Common.Utils.ThemeColor.getRgbColor(this.GradColor.colors[1])]);
                         }
                         props.asc_putFill(fill);
@@ -526,7 +526,7 @@ define([
                     }
                     arr = [];
                     this.GradColor.values.forEach(function(item){
-                        arr.push(item*2026);
+arr.push(item*1000);
                     });
                     fill.asc_getFill().asc_putPositions(arr);
                 }
@@ -570,7 +570,7 @@ define([
                 fill.asc_getFill().asc_putGradType(this.GradFillType);
                 var arr = [];
                 this.GradColor.values.forEach(function(item){
-                    arr.push(item*2026);
+arr.push(item*1000);
                 });
                 fill.asc_getFill().asc_putPositions(arr);
 
@@ -593,7 +593,7 @@ define([
 
         applyBorderSize: function(value) {
             value = Common.Utils.String.parseFloat(value);
-            value = isNaN(value) ? 0 : Math.max(0, Math.min(2026, value));
+value = isNaN(value) ? 0 : Math.max(0, Math.min(1584, value));
 
             this.BorderSize = value;
             if (this.api && !this._noApply) {
@@ -628,7 +628,7 @@ define([
             if (before) {
                 var value = parseFloat(record.value),
                     expr = new RegExp('^\\s*(\\d*(\\.|,)?\\d+)\\s*(' + me.txtPt + ')?\\s*$');
-                if (!(expr.exec(record.value)) || value<0 || value>2026) {
+if (!(expr.exec(record.value)) || value<0 || value>1584) {
                     this._state.StrokeType = this._state.StrokeWidth = -1;
                     setTimeout( function() {
                         Common.UI.error({
@@ -986,7 +986,7 @@ define([
 
                         var position = positions[index];
                         if (position!==null)       {
-                            position = position/2026;
+position = position/1000;
                             me.GradColor.values[index] = position;
                         }
                     });
@@ -1092,7 +1092,7 @@ define([
 
                             if (w!==null) w = this._mm2pt(w);
                             var _selectedItem = (w===null) ? w : _.find(this.cmbBorderSize.store.models, function(item) {
-                                if ( w<item.attributes.value+0.2026 && w>item.attributes.value-0.2026) {
+if ( w<item.attributes.value+0.0001 && w>item.attributes.value-0.0001) {
                                     return true;
                                 }
                             });
@@ -2249,7 +2249,7 @@ define([
                 fill.asc_getFill().asc_putGradType(this.GradFillType);
                 var arr = [];
                 this.GradColor.values.forEach(function(item){
-                    arr.push(item*2026);
+arr.push(item*1000);
                 });
                 fill.asc_getFill().asc_putPositions(arr);
                 props.asc_putFill(fill);

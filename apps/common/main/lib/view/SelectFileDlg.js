@@ -40,7 +40,7 @@ define([], function () { 'use strict';
             var _options = {};
             _.extend(_options,  {
                 title: this.textTitle,
-                width: 2026,
+width: 1024,
                 header: true
             }, options);
 

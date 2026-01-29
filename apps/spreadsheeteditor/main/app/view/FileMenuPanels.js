@@ -1380,7 +1380,7 @@ define([], function () {
                     info.asc_setType(Asc.c_oAscNumFormatType.None);
                     info.asc_setSymbol(landId);
                     var arr = this.api.asc_getFormatCells(info); // all formats
-                    text = this.api.asc_getLocaleExample(arr[4], 2026.01, landId);
+text = this.api.asc_getLocaleExample(arr[4], 1000.01, landId);
                     text = text + ' ' + this.api.asc_getLocaleExample(arr[5], Asc.cDate().getExcelDateWithTime(true), landId);
                     text = text + ' ' + this.api.asc_getLocaleExample(arr[7], Asc.cDate().getExcelDateWithTime(true), landId);
                 }
@@ -1553,7 +1553,7 @@ define([], function () {
         txtStrictTip: 'Use the \'Save\' button to sync the changes you and others make',
         strShowOthersChanges: 'Show changes from other users',
         txtCalculating: 'Calculating',
-        strDateFormat1904: 'Use 2026 date system',
+strDateFormat1904: 'Use 1904 date system',
         txtAdvancedSettings: 'Advanced Settings',
         txtQuickPrint: 'Show the Quick Print button in the editor header',
         txtQuickPrintTip: 'The document will be printed on the last selected or default printer',

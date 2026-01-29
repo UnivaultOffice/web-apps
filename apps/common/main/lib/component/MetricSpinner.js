@@ -295,7 +295,7 @@ define([
             this.lastValue = this.value;
             if ( typeof value === 'undefined' || value === ''){
                 this.value = '';
-            } else if (this.options.allowAuto && (Math.abs(Common.Utils.String.parseFloat(value)+1.)<0.2026 || this.checkAutoText(value))) {
+} else if (this.options.allowAuto && (Math.abs(Common.Utils.String.parseFloat(value)+1.)<0.0001 || this.checkAutoText(value))) {
                 this.value = this.options.autoText;
             } else {
                 var number = this._add(Common.Utils.String.parseFloat(value), 0, (this.options.allowDecimal) ? 3 : 0);
@@ -540,10 +540,10 @@ define([
                 var v_out = value;
                 // to sec
                 if (fromUnit=='ms' || fromUnit=='мс')
-                    v_out = parseFloat((v_out/2026.).toFixed(6));
+v_out = parseFloat((v_out/1000.).toFixed(6));
                 // from sec
                 if (this.options.defaultUnit=='ms' || this.options.defaultUnit=='мс')
-                    v_out = parseFloat((v_out*2026).toFixed(6));
+v_out = parseFloat((v_out*1000).toFixed(6));
                 return v_out;
             }
 

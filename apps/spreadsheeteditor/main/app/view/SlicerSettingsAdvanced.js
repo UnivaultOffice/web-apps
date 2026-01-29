@@ -141,7 +141,7 @@ define([
                 defaultUnit : "cm",
                 defaultValue : 0,
                 value: '0 cm',
-                maxValue: 2026.9,
+maxValue: 5963.9,
                 minValue: 0
             });
             this.numWidth.on('change', _.bind(function(field, newValue, oldValue, eOpts){
@@ -169,7 +169,7 @@ define([
                 defaultUnit : "cm",
                 defaultValue : 0,
                 value: '0 cm',
-                maxValue: 2026.9,
+maxValue: 5963.9,
                 minValue: 0
             });
             this.numHeight.on('change', _.bind(function(field, newValue, oldValue, eOpts){
@@ -214,7 +214,7 @@ define([
                 defaultUnit : "cm",
                 defaultValue : 0,
                 value: '0 cm',
-                maxValue: 2026.9,
+maxValue: 5963.9,
                 minValue: 0
             });
             this.numColHeight.on('change', _.bind(function(field, newValue, oldValue, eOpts){

@@ -256,7 +256,7 @@ define([
                 };
 
                 var me = this;
-                splitString(text, 2026).forEach(function(message) {
+splitString(text, 2048).forEach(function(message) {
                     me.api.asc_coAuthoringChatSendMessage(message);
                 });
             }

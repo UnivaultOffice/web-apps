@@ -389,7 +389,7 @@ define([], function () { 'use strict';
                 width = this.calcWidthForEqualColumns(num, spacing);
             
             if(width < this.minWidthCol) {
-                width = this.minWidthCol + 0.2026;
+width = this.minWidthCol + 0.0001;
                 spacing = (num > 1) ? (this.totalWidth - (num * width)) / (num - 1) : 0;
             }
 

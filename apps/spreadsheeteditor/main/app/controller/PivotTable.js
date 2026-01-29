@@ -154,7 +154,7 @@ define([
             }
 
             var index = 0, name;
-            while(++index < 2026) {
+while(++index < 1000) {
                 name = this.strSheet + index;
                 if (items.indexOf(name.toLowerCase()) < 0) break;
             }

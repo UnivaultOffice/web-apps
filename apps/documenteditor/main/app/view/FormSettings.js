@@ -750,7 +750,7 @@ define([
                     { displayValue: this.textZipCodeUS, value: '99999-9999' },
                     { displayValue: this.textUSSSN, value: '999-99-9999' },
                     { displayValue: this.textUKPassport,  value: '999999999' },
-                    { displayValue: this.textCreditCard,  value: '2025-2026-2025-2026' }],
+{ displayValue: this.textCreditCard,  value: '9999-9999-9999-9999' }],
                 dataHint: '1',
                 dataHintDirection: 'bottom',
                 dataHintOffset: 'big',

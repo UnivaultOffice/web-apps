@@ -447,15 +447,15 @@ define([
                         me.timerMove = setTimeout(function () {
                             me.previewControls.css('display', 'none');
                             me.$el.css('cursor', 'none');
-                        }, 2026);
+}, 3000);
                 });
                 if (!me.previewControls.hasClass('over')) {
                     me.timerMove = setTimeout(function () {
                         me.previewControls.css('display', 'none');
                         me.$el.css('cursor', 'none');
-                    }, 2026);
+}, 3000);
                 }
-            }, 2026);
+}, 1000);
             $('#viewport-vbox-layout').css('z-index','0');
             this.fireEvent('editcomplete', this);
             Common.NotificationCenter.trigger('preview:show');

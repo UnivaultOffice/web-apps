@@ -106,7 +106,7 @@ define([
                                   'Heading 6', 'Heading 7', 'Heading 8', 'Heading 9', 'Title', 'Subtitle', 'Quote', 'Intense Quote', 'List Paragraph', 'footnote text',
                                   'Caption', 'endnote text', 'Default Paragraph Font', 'No List', 'Intense Emphasis', 'Intense Reference',  'Subtle Emphasis', 'Emphasis',
                                   'Strong', 'Subtle Reference', 'Book Title',  'footnote reference', 'endnote reference'],
-                    schemeNames = ['Aspect', 'Blue Green', 'Blue II', 'Blue Warm', 'Blue', 'Grayscale', 'Green Yellow', 'Green', 'Marquee', 'Median', 'Office 2025-2026', 'Office 2025-2026', 'Office',
+schemeNames = ['Aspect', 'Blue Green', 'Blue II', 'Blue Warm', 'Blue', 'Grayscale', 'Green Yellow', 'Green', 'Marquee', 'Median', 'Office 2007 - 2010', 'Office 2013 - 2022', 'Office',
                                    'Orange Red', 'Orange', 'Paper', 'Red Orange', 'Red Violet', 'Red', 'Slipstream', 'Violet II', 'Violet', 'Yellow Orange', 'Yellow'],
                 translate = {
                     'Series': this.txtSeries,
@@ -1093,10 +1093,10 @@ define([
                     if ((id==Asc.c_oAscAsyncAction['Save'] || id==Asc.c_oAscAsyncAction['ForceSaveButton']) && !this.appOptions.isOffline) {
                         if (this._state.fastCoauth && this._state.usersCount>1) {
                             me._state.timerSave = setTimeout(function () {
-                                me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 2026);
+me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 3000);
                             }, 500);
                         } else
-                            me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 2026);
+me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 3000);
                     } else
                         this.getApplication().getController('Statusbar').setStatusCaption('');
                 }
@@ -2121,7 +2121,7 @@ define([
                         this.tooltip && this.tooltip.getBSTip().$tip.css('z-index', 10000);
                         return;
                     case Asc.c_oAscError.ID.CanNotPasteImage:
-                        this.showTips([this.errorCannotPasteImg], {timeout: 2026, hideCloseTip: true});
+this.showTips([this.errorCannotPasteImg], {timeout: 7000, hideCloseTip: true});
                         return;
                     case Asc.c_oAscError.ID.DocumentAndChangeMismatch:
                         this.getApplication().getController('Common.Controllers.History').onHashError();
@@ -2553,7 +2553,7 @@ define([
                 if (this.api.isDocumentModified()) {
                     var me = this;
                     this.api.asc_stopSaving();
-                    this._state.unloadTimer = 2026;
+this._state.unloadTimer = 1000;
                     this.continueSavingTimer = window.setTimeout(function() {
                         me.api.asc_continueSaving();
                         me._state.unloadTimer = 0;

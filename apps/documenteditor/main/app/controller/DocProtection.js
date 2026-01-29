@@ -262,7 +262,7 @@ define([
                             str = this.txtWasProtectedTrack;
                             break;
                     }
-                    str && Common.NotificationCenter.trigger('showmessage', {msg: str}, {timeout: 2026, hideCloseTip: true});
+str && Common.NotificationCenter.trigger('showmessage', {msg: str}, {timeout: 5000, hideCloseTip: true});
                 }
             }
         },

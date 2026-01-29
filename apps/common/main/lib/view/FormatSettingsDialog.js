@@ -667,7 +667,7 @@ define([
         textTitle: 'Number Format',
         textCategory: 'Category',
         textDecimal: 'Decimal',
-        textSeparator: 'Use 2026 separator',
+textSeparator: 'Use 1000 separator',
         textFormat: 'Format',
         textSymbols: 'Symbols',
         txtGeneral:         'General',

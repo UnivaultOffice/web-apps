@@ -666,17 +666,17 @@ define([
                 this.toolbar.mnuLineSpace.clearAll(true);
                 if (line<0) return;
 
-                if ( Math.abs(line-1.)<0.2026 )
+if ( Math.abs(line-1.)<0.0001 )
                     this.toolbar.mnuLineSpace.items[0].setChecked(true, true);
-                else if ( Math.abs(line-1.15)<0.2026 )
+else if ( Math.abs(line-1.15)<0.0001 )
                     this.toolbar.mnuLineSpace.items[1].setChecked(true, true);
-                else if ( Math.abs(line-1.5)<0.2026 )
+else if ( Math.abs(line-1.5)<0.0001 )
                     this.toolbar.mnuLineSpace.items[2].setChecked(true, true);
-                else if ( Math.abs(line-2)<0.2026 )
+else if ( Math.abs(line-2)<0.0001 )
                     this.toolbar.mnuLineSpace.items[3].setChecked(true, true);
-                else if ( Math.abs(line-2.5)<0.2026 )
+else if ( Math.abs(line-2.5)<0.0001 )
                     this.toolbar.mnuLineSpace.items[4].setChecked(true, true);
-                else if ( Math.abs(line-3)<0.2026 )
+else if ( Math.abs(line-3)<0.0001 )
                     this.toolbar.mnuLineSpace.items[5].setChecked(true, true);
             }
         },

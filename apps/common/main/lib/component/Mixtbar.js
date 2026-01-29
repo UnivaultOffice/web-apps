@@ -50,7 +50,7 @@ define([
         var $boxTabs;
         var $scrollL;
         var $scrollR;
-        var optsFold = {timeout: 2026};
+var optsFold = {timeout: 2000};
         var config = {};
         var btnsMore = [];
 

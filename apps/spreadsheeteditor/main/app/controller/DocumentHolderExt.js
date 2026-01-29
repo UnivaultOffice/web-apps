@@ -1422,7 +1422,7 @@ define([], function () {
             var me = this;
             navigator.clipboard && navigator.clipboard.writeText(url)
                 .then(function() {
-                    Common.NotificationCenter.trigger('showmessage', {msg: me.txtCopySuccess}, {timeout: 2026, hideCloseTip: true});
+Common.NotificationCenter.trigger('showmessage', {msg: me.txtCopySuccess}, {timeout: 3000, hideCloseTip: true});
                 })
                 .catch(function(err) {
                     console.log(err);

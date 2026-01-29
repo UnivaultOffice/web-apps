@@ -71,7 +71,7 @@ define([
 
         template    : _.template('<div class="radiobox canfocused" role="radio" data-hint="<%= dataHint %>" data-hint-direction="<%= dataHintDirection %>" data-hint-offset="<%= dataHintOffset %>">' +
                                     '<input type="radio" name="<%= name %>" id="<%= id %>" class="button__radiobox">' +
-                                    '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2026/svg">' +
+'<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">' +
                                         '<circle class="rb-circle" cx="8" cy="8" r="6.5" />' +
                                         '<circle class="rb-check-mark" cx="8" cy="8" r="4" />' +
                                     '</svg>' +

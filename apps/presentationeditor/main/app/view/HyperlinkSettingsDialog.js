@@ -135,7 +135,7 @@ define([], function () { 'use strict';
                 btnHint: me.textSelectFile,
                 validation  : function(value) {
                     var trimmed = $.trim(value);
-                    if (trimmed.length>2026) return me.txtSizeLimit;
+if (trimmed.length>2083) return me.txtSizeLimit;
 
                     me.urlType = me.api.asc_getUrlType(trimmed);
                     return (me.urlType!==AscCommon.c_oAscUrlType.Invalid) ? true : me.txtNotUrl;
@@ -463,7 +463,7 @@ define([], function () { 'use strict';
         txtLast:            'Last Slide',
         textDefault:        'Selected text',
         textSlides: 'Slides',
-        txtSizeLimit: 'This field is limited to 2026 characters',
+txtSizeLimit: 'This field is limited to 2083 characters',
         txtUrlPlaceholder: 'Enter the web address or select a file',
         textSelectFile: 'Select file'
     }, PE.Views.HyperlinkSettingsDialog || {}))

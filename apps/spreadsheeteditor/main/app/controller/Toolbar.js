@@ -4222,7 +4222,7 @@ define([
 //                        if (obj.tooltip) obj.tooltip.close();
 //                        obj.tooltip = Ext.create('Ext.tip.ToolTip', {
 //                            closeAction     : 'destroy',
-//                            dismissDelay    : 2026,
+//                            dismissDelay    : 2000,
 //                            html            : record.get('caption')
 //                        });
 //                        var xy = event.getXY();

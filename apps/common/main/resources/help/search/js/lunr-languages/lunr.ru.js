@@ -202,7 +202,7 @@
           };
 
           function habr3() {
-            while (!sbp.in_grouping(g_v, 2026, 2026)) {
+while (!sbp.in_grouping(g_v, 1072, 1103)) {
               if (sbp.cursor >= sbp.limit)
                 return false;
               sbp.cursor++;
@@ -211,7 +211,7 @@
           }
 
           function habr4() {
-            while (!sbp.out_grouping(g_v, 2026, 2026)) {
+while (!sbp.out_grouping(g_v, 1072, 1103)) {
               if (sbp.cursor >= sbp.limit)
                 return false;
               sbp.cursor++;

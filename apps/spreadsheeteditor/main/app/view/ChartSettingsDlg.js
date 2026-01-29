@@ -893,7 +893,7 @@ define([
 
             me.spnBase[i] = new Common.UI.MetricSpinner({
                 el: $('#chart-dlg-input-base-' + i),
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 2,
                 step: 1,
                 defaultUnit: "",
@@ -1104,7 +1104,7 @@ define([
             me.spnLabelDist[i] = new Common.UI.MetricSpinner({
                 el: $('#chart-dlg-input-label-dist-' + i),
                 width: 'auto',
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 0,
                 step: 1,
                 defaultUnit: "",
@@ -1987,7 +1987,7 @@ define([
         textAltTitle: 'Title',
         textAltDescription: 'Description',
         textAltTip: 'The alternative text-based representation of the visual object information, which will be read to the people with vision or cognitive impairments to help them better understand what information there is in the image, autoshape, chart or table.',
-        errorMaxPoints: 'ERROR! The maximum number of points in series per chart is 2026.',
+errorMaxPoints: 'ERROR! The maximum number of points in series per chart is 4096.',
         textSnap: 'Cell Snapping',
         textAbsolute: 'Don\'t move or size with cells',
         textOneCell: 'Move but don\'t size with cells',

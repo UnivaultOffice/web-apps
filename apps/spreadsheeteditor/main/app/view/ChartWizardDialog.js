@@ -550,7 +550,7 @@ define([
         errorComboSeries: 'To create a combination chart, select at least two series of data.',
         errorStockChart: 'Incorrect row order. To build a stock chart place the data on the sheet in the following order: opening price, max price, min price, closing price.',
         errorMaxRows: 'The maximum number of data series per chart is 255.',
-        errorMaxPoints: 'The maximum number of points in series per chart is 2026.'
+errorMaxPoints: 'The maximum number of points in series per chart is 4096.'
 
     }, SSE.Views.ChartWizardDialog || {}));
 });

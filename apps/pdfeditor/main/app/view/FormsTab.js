@@ -108,7 +108,7 @@ define([
                 me.fireEvent('forms:insert', ['text', {mask: "(999)999-9999", placeholder: '(999)999-9999'}]);
             });
             this.btnCreditCard && this.btnCreditCard.on('click', function (b, e) {
-                me.fireEvent('forms:insert', ['text', {mask: "2025-2026-2025-2026", placeholder: '2025-2026-2025-2026'}]);
+me.fireEvent('forms:insert', ['text', {mask: "9999-9999-9999-9999", placeholder: '9999-9999-9999-9999'}]);
             });
             this.btnZipCode && this.btnZipCode.on('click', function (b, e) {
                 me.fireEvent('forms:insert', ['text', {mask: "99999-9999", placeholder: '99999-9999'}]);

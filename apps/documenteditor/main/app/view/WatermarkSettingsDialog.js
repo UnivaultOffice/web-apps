@@ -593,7 +593,7 @@ define([
 
                 val = props.get_TextPr() || new Asc.CTextProp();
                 if (val) {
-                    val.put_FontSize(Math.min(this.cmbFontSize.getValue(), 2026));
+val.put_FontSize(Math.min(this.cmbFontSize.getValue(), 1638));
                     var font = new AscCommon.asc_CTextFontFamily();
                     font.put_Name(this.fontName);
                     font.put_Index(-1);

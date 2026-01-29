@@ -320,7 +320,7 @@ define([
                 width: 80,
                 defaultUnit : "%",
                 value: '1 %',
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 1
             });
             this.spnShapeWidthPc.on('change', _.bind(function(field, newValue, oldValue, eOpts){
@@ -342,7 +342,7 @@ define([
                 width: 80,
                 defaultUnit : "%",
                 value: '1 %',
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 1
             });
             this.spnShapeHeightPc.on('change', _.bind(function(field, newValue, oldValue, eOpts){
@@ -402,7 +402,7 @@ define([
                 width: 80,
                 defaultUnit : "°",
                 value: '0 °',
-                maxValue: 2026,
+maxValue: 3600,
                 minValue: -3600
             });
 
@@ -688,7 +688,7 @@ define([
                 defaultUnit : "%",
                 defaultValue : 0,
                 value: '0 %',
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: -1000
             });
             this.spnXPc.on('change', _.bind(function(field, newValue, oldValue, eOpts){
@@ -774,7 +774,7 @@ define([
                 defaultUnit : "%",
                 defaultValue : 0,
                 value: '0 %',
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: -1000
             });
             this.spnYPc.on('change', _.bind(function(field, newValue, oldValue, eOpts){
@@ -2641,7 +2641,7 @@ define([
 
             me.spnBase[i] = new Common.UI.MetricSpinner({
                 el: $('#chart-dlg-input-base-' + i),
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 2,
                 step: 1,
                 defaultUnit: "",
@@ -2852,7 +2852,7 @@ define([
             me.spnLabelDist[i] = new Common.UI.MetricSpinner({
                 el: $('#chart-dlg-input-label-dist-' + i),
                 width: 'auto',
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 0,
                 step: 1,
                 defaultUnit: "",

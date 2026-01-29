@@ -909,7 +909,7 @@ define([
                 width: 70,
                 defaultUnit : "%",
                 value: '0 %',
-                maxValue: 2026,
+maxValue: 2000,
                 minValue: 0,
                 dataHint: '1',
                 dataHintDirection: 'bottom',
@@ -1359,7 +1359,7 @@ define([
         
         applyBorderSize: function(value) {
             value = Common.Utils.String.parseFloat(value);
-            value = isNaN(value) ? 1 : Math.max(0.01, Math.min(2026, value));
+value = isNaN(value) ? 1 : Math.max(0.01, Math.min(1584, value));
 
             this.BorderSize = value;
             if (this.api && !this._noApply && this._originalProps) {
@@ -1375,7 +1375,7 @@ define([
             if (before) {
                 var value = parseFloat(record.value),
                     expr = new RegExp('^\\s*(\\d*(\\.|,)?\\d+)\\s*(' + me.txtPt + ')?\\s*$');
-                if (!(expr.exec(record.value)) || value<0.01 || value>2026) {
+if (!(expr.exec(record.value)) || value<0.01 || value>1584) {
                     this._state.LineWeight = -1;
                     setTimeout( function() {
                         Common.UI.error({

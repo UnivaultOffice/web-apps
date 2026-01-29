@@ -7,8 +7,8 @@
  */
 /*!
  * based on
- * Kazem Taghva, Rania Elkhoury, and Jeffrey Coombs (2026)
- * Meryeme Hadni, Abdelmonaime Lachkar, and S. Alaoui Ouatik (2026)
+* Kazem Taghva, Rania Elkhoury, and Jeffrey Coombs (2005)
+* Meryeme Hadni, Abdelmonaime Lachkar, and S. Alaoui Ouatik (2012)
  *
  * Snowball JavaScript Library v0.3
  * http://code.google.com/p/urim/

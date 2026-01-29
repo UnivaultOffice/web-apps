@@ -276,7 +276,7 @@ define([
                 width: 80,
                 defaultUnit : "°",
                 value: '0 °',
-                maxValue: 2026,
+maxValue: 3600,
                 minValue: -3600
             });
 

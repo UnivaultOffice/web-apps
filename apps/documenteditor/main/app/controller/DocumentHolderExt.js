@@ -618,12 +618,12 @@ define([], function () {
                             ToolTip = ToolTip.substr(0, 256) + '...';
                     } else if (type == Asc.c_oAscMouseMoveDataTypes.Footnote) {
                         ToolTip = moveData.get_FootnoteText();
-                        if (ToolTip.length>2026)
-                            ToolTip = ToolTip.substr(0, 2026) + '...';
+if (ToolTip.length>1000)
+ToolTip = ToolTip.substr(0, 1000) + '...';
                     } else if (type==Asc.c_oAscMouseMoveDataTypes.Form) {
                         ToolTip = moveData.get_FormHelpText();
-                        if (ToolTip.length>2026)
-                            ToolTip = ToolTip.substr(0, 2026) + '...';
+if (ToolTip.length>1000)
+ToolTip = ToolTip.substr(0, 1000) + '...';
                     } else if (type==Asc.c_oAscMouseMoveDataTypes.Review && moveData.get_ReviewChange()) {
                         var changes = me.getApplication().getController("Common.Controllers.ReviewChanges").readSDKChange([moveData.get_ReviewChange()]);
                         if (changes && changes.length>0)
@@ -632,8 +632,8 @@ define([], function () {
                             ToolTip = '<b>'+ Common.Utils.String.htmlEncode(AscCommon.UserInfoParser.getParsedName(changes.get('username'))) +'  </b>';
                             ToolTip += '<span class="review-date">'+ changes.get('date') +'</span><br>';
                             ToolTip += changes.get('changetext');
-                            if (ToolTip.length>2026)
-                                ToolTip = ToolTip.substr(0, 2026) + '...';
+if (ToolTip.length>1000)
+ToolTip = ToolTip.substr(0, 1000) + '...';
                         }
                     } else if (type===Asc.c_oAscMouseMoveDataTypes.Placeholder) {
                         switch (moveData.get_PlaceholderType()) {
@@ -1645,7 +1645,7 @@ define([], function () {
             this._dateObj = props;
 
             if (controlsContainer.length < 1) {
-                controlsContainer = $('<div id="calendar-control-container" style="position: absolute;z-index: 2026;"><div id="id-document-calendar-control" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
+controlsContainer = $('<div id="calendar-control-container" style="position: absolute;z-index: 1000;"><div id="id-document-calendar-control" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
                 cmpEl.append(controlsContainer);
             }
 

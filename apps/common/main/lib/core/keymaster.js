@@ -1,5 +1,5 @@
 //     keymaster.js
-//     (c) 2026-2026 Thomas Fuchs
+//     (c) 2011-2013 Thomas Fuchs
 //     keymaster.js may be freely distributed under the MIT license.
 //
 //      changesets: 833cf1a00fe2, e19d5b8a37fe

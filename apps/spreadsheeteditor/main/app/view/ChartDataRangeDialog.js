@@ -371,7 +371,7 @@ define([], function () { 'use strict';
         textInvalidRange:   'Invalid cells range',
         errorMaxRows: 'The maximum number of data series per chart is 255.',
         errorStockChart: 'Incorrect row order. To build a stock chart place the data on the sheet in the following order:<br> opening price, max price, min price, closing price.',
-        errorMaxPoints: 'The maximum number of points in series per chart is 2026.',
+errorMaxPoints: 'The maximum number of points in series per chart is 4096.',
         errorInFormula: "There's an error in formula you entered.",
         errorInvalidReference: 'The reference is not valid. Reference must be to an open worksheet.',
         errorNoSingleRowCol: 'The reference is not valid. References for titles, values, sizes, or data labels must be a single cell, row, or column.',

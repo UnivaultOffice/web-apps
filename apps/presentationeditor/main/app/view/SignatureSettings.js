@@ -167,8 +167,8 @@ define([
                 (item.asc_getValid()==0) ? validSignatures.push(sign) : invalidSignatures.push(sign);
             });
 
-            // validSignatures = [{name: 'Hammish Mitchell', guid: '123', date: '18/05/2026', invisible: true}, {name: 'Someone Somewhere', guid: '345', date: '18/05/2026'}];
-            // invalidSignatures = [{name: 'Mary White', guid: '111', date: '18/05/2026'}, {name: 'John Black', guid: '456', date: '18/05/2026'}];
+// validSignatures = [{name: 'Hammish Mitchell', guid: '123', date: '18/05/2017', invisible: true}, {name: 'Someone Somewhere', guid: '345', date: '18/05/2017'}];
+// invalidSignatures = [{name: 'Mary White', guid: '111', date: '18/05/2017'}, {name: 'John Black', guid: '456', date: '18/05/2017'}];
 
             me._state.hasValid = validSignatures.length>0;
             me._state.hasInvalid = invalidSignatures.length>0;

@@ -1,7 +1,7 @@
 {
     "name": "pdfeditor",
     "version": "4.3.0",
-    "build": 1156,
+    "build": 1157,
     "homepage": "http://www.univaultoffice.github.io",
     "private": true,
     "main": {

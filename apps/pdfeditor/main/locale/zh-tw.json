@@ -2314,7 +2314,7 @@
   "PDFE.Views.HyperlinkSettingsDialog.txtNotUrl": "此欄位應為符合「http://www.example.com」格式的網址。",
   "PDFE.Views.HyperlinkSettingsDialog.txtPage": "頁面",
   "PDFE.Views.HyperlinkSettingsDialog.txtPrev": "前一頁",
-  "PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "此欄位的限制為 2026 個字元。",
+"PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "此欄位的限制為 2083 個字元。",
   "PDFE.Views.HyperlinkSettingsDialog.txtUrlPlaceholder": "輸入網址或選取檔案",
   "PDFE.Views.ImageSettings.strTransparency": "不透明度",
   "PDFE.Views.ImageSettings.textAdvanced": "顯示進階設定",

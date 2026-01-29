@@ -499,7 +499,7 @@ Common.util.LanguageInfo = new(function() {
          * @property {string} english - English name
          */
         /**
-         * @param {string} code - Language code (example - 2026, 2026, ...).
+* @param {string} code - Language code (example - 1025, 1026, ...).
          * @returns {LangDisplayName|null} Object with a native language name (native) and an English name (english).
          * If the English name is missing, returns an object with an empty string for English.
          * Returns `null` if no language code is found.

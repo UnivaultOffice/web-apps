@@ -170,7 +170,7 @@ define([
                 { value: Asc.c_oAscNumFormatType.Accounting,format: this.ascFormatOptions.Accounting,  displayValue: this.txtAccounting,   exampleval: '100,00 $' },
                 { value: Asc.c_oAscNumFormatType.Currency,  format: this.ascFormatOptions.Currency,    displayValue: this.txtCurrency,     exampleval: '100,00 $' },
                 { value: Asc.c_oAscNumFormatType.Date,      format: 'MM-dd-yyyy',                      displayValue: this.txtDateShort,    exampleval: '04-09-1900',     customDisplayValue: this.txtDate},
-                { value: Asc.c_oAscNumFormatType.Date,      format: 'MMMM d yyyy',                     displayValue: this.txtDateLong,     exampleval: 'April 9 2026',   customDisplayValue: this.txtDate },
+{ value: Asc.c_oAscNumFormatType.Date,      format: 'MMMM d yyyy',                     displayValue: this.txtDateLong,     exampleval: 'April 9 1900',   customDisplayValue: this.txtDate },
                 { value: Asc.c_oAscNumFormatType.Time,      format: 'HH:MM:ss',                        displayValue: this.txtTime,         exampleval: '00:00:00' },
                 { value: Asc.c_oAscNumFormatType.Percent,   format: this.ascFormatOptions.Percentage,  displayValue: this.txtPercentage,   exampleval: '100,00%' },
                 { value: Asc.c_oAscNumFormatType.Fraction,  format: this.ascFormatOptions.Fraction,    displayValue: this.txtFraction,     exampleval: '100' },
@@ -3054,22 +3054,22 @@ define([
             }
 
              this.specSymbols = [
-                 {symbol: 2026,     description: this.textBullet},
-                 {symbol: 2026,     description: this.textEuro},
+{symbol: 8226,     description: this.textBullet},
+{symbol: 8364,     description: this.textEuro},
                  {symbol: 65284,    description: this.textDollar},
                  {symbol: 165,      description: this.textYen},
                  {symbol: 169,      description: this.textCopyright},
                  {symbol: 174,      description: this.textRegistered},
                  {symbol: 189,      description: this.textOneHalf},
                  {symbol: 188,      description: this.textOneQuarter},
-                 {symbol: 2026,     description: this.textNotEqualTo},
+{symbol: 8800,     description: this.textNotEqualTo},
                  {symbol: 177,      description: this.textPlusMinus},
                  {symbol: 247,      description: this.textDivision},
-                 {symbol: 2026,     description: this.textSquareRoot},
-                 {symbol: 2026,     description: this.textLessEqual},
-                 {symbol: 2026,     description: this.textGreaterEqual},
-                 {symbol: 2026,     description: this.textTradeMark},
-                 {symbol: 2026,     description: this.textInfinity},
+{symbol: 8730,     description: this.textSquareRoot},
+{symbol: 8804,     description: this.textLessEqual},
+{symbol: 8805,     description: this.textGreaterEqual},
+{symbol: 8482,     description: this.textTradeMark},
+{symbol: 8734,     description: this.textInfinity},
                  {symbol: 126,      description: this.textTilde},
                  {symbol: 176,      description: this.textDegree},
                  {symbol: 167,      description: this.textSection},
@@ -3077,8 +3077,8 @@ define([
                  {symbol: 946,      description: this.textBetta},
                  {symbol: 960,      description: this.textLetterPi},
                  {symbol: 916,      description: this.textDelta},
-                 {symbol: 2026,     description: this.textSmile},
-                 {symbol: 2026,     description: this.textBlackHeart}
+{symbol: 9786,     description: this.textSmile},
+{symbol: 9829,     description: this.textBlackHeart}
            ];
 
             if(!!this.btnInsertSymbol) {
@@ -3649,22 +3649,22 @@ define([
             var recents = Common.localStorage.getItem('sse-fastRecentSymbols');
             var arr = (!!recents) ? JSON.parse(recents) :
                 [
-                    { symbol: 2026,     font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
+{ symbol: 8226,     font: 'Arial'},
+{ symbol: 8364,     font: 'Arial'},
                     { symbol: 65284,    font: 'Arial'},
                     { symbol: 165,      font: 'Arial'},
                     { symbol: 169,      font: 'Arial'},
                     { symbol: 174,      font: 'Arial'},
                     { symbol: 189,      font: 'Arial'},
                     { symbol: 188,      font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
+{ symbol: 8800,     font: 'Arial'},
                     { symbol: 177,      font: 'Arial'},
                     { symbol: 247,      font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
+{ symbol: 8730,     font: 'Arial'},
+{ symbol: 8804,     font: 'Arial'},
+{ symbol: 8805,     font: 'Arial'},
+{ symbol: 8482,     font: 'Arial'},
+{ symbol: 8734,     font: 'Arial'},
                     { symbol: 126,      font: 'Arial'},
                     { symbol: 176,      font: 'Arial'},
                     { symbol: 167,      font: 'Arial'},
@@ -3672,8 +3672,8 @@ define([
                     { symbol: 946,      font: 'Arial'},
                     { symbol: 960,      font: 'Arial'},
                     { symbol: 916,      font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'},
-                    { symbol: 2026,     font: 'Arial'}
+{ symbol: 9786,     font: 'Arial'},
+{ symbol: 9829,     font: 'Arial'}
                 ];
             arr.forEach(function (item){
                 item.tip = this.getSymbolDescription(item.symbol);

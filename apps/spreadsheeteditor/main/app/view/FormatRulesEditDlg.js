@@ -278,7 +278,7 @@ define([
                 takeFocusOnClose: true
             }).on('selected', function(combo, record) {
                 var percent = !!record.value;
-                // me.numRank.setMaxValue(percent ? 100 : 2026);
+// me.numRank.setMaxValue(percent ? 100 : 1000);
                 me.numRank.setValue(me.numRank.getNumberValue());
             });
             this.cmbPercent.setValue(0);
@@ -588,7 +588,7 @@ define([
                 { value: Asc.c_oAscNumFormatType.Accounting,format: this.ascFormatOptions.Accounting,  displayValue: this.txtAccounting,   exampleval: '100,00 $' },
                 { value: Asc.c_oAscNumFormatType.Currency,  format: this.ascFormatOptions.Currency,    displayValue: this.txtCurrency,     exampleval: '100,00 $' },
                 { value: Asc.c_oAscNumFormatType.Date,      format: 'MM-dd-yyyy',                      displayValue: this.txtDateShort,    exampleval: '04-09-1900',    customDisplayValue: this.txtDate},
-                { value: Asc.c_oAscNumFormatType.Date,      format: 'MMMM d yyyy',                     displayValue: this.txtDateLong,     exampleval: 'April 9 2026', customDisplayValue: this.txtDate},
+{ value: Asc.c_oAscNumFormatType.Date,      format: 'MMMM d yyyy',                     displayValue: this.txtDateLong,     exampleval: 'April 9 1900', customDisplayValue: this.txtDate},
                 { value: Asc.c_oAscNumFormatType.Time,      format: 'HH:MM:ss',                        displayValue: this.txtTime,         exampleval: '00:00:00' },
                 { value: Asc.c_oAscNumFormatType.Percent,   format: this.ascFormatOptions.Percentage,  displayValue: this.txtPercentage,   exampleval: '100,00%' },
                 { value: Asc.c_oAscNumFormatType.Fraction,  format: this.ascFormatOptions.Fraction,    displayValue: this.txtFraction,     exampleval: '100' },
@@ -1985,7 +1985,7 @@ define([
                         res = this.api.asc_isValidDataRefCf(type, [[this.numRank.getNumberValue(), isPercent]]);
                         res && (res = res[0]);
                         if (res == Asc.c_oAscError.ID.ErrorTop10Between)
-                            msg = Common.Utils.String.format(this.textErrorTop10Between, isPercent ? 0 : 1, isPercent ? 100 : 2026);
+msg = Common.Utils.String.format(this.textErrorTop10Between, isPercent ? 0 : 1, isPercent ? 100 : 1000);
                         break;
                     case Asc.c_oAscCFType.colorScale:
                         var scalesCount = rec.get('num');

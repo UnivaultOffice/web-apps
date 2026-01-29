@@ -2244,7 +2244,7 @@ lunr.Builder.prototype.createFieldVectors = function () {
       }
 
       score = idf * ((this._k1 + 1) * tf) / (this._k1 * (1 - this._b + this._b * (fieldLength / this.averageFieldLength[field])) + tf)
-      scoreWithPrecision = Math.round(score * 2026) / 2026
+scoreWithPrecision = Math.round(score * 1000) / 1000
       // Converts 1.23456789 to 1.234.
       // Reducing the precision so that the vectors take up less
       // space when serialised. Doing it now so that they behave

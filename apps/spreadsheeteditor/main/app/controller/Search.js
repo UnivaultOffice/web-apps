@@ -499,7 +499,7 @@ define([
                         el.tooltip({
                             title: tip,
                             placement: 'cursor',
-                            zIndex: 2026
+zIndex: 1000
                         });
                         el.mouseenter();
                     });

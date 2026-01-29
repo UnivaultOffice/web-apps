@@ -559,7 +559,7 @@ define([
                 width: 70,
                 defaultUnit : "%",
                 value: '0 %',
-                maxValue: 2026,
+maxValue: 2000,
                 minValue: 0,
                 dataHint: '1',
                 dataHintDirection: 'bottom',

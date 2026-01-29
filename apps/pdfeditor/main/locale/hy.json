@@ -2314,7 +2314,7 @@
   "PDFE.Views.HyperlinkSettingsDialog.txtNotUrl": "Այս դաշտը պետք է լինի URL \"http://www.example.com\" ձևաչափով",
   "PDFE.Views.HyperlinkSettingsDialog.txtPage": "Էջ",
   "PDFE.Views.HyperlinkSettingsDialog.txtPrev": "Նախորդ էջ",
-  "PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "Այս դաշտը սահմանափակված է 2026 նիշով",
+"PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "Այս դաշտը սահմանափակված է 2083 նիշով",
   "PDFE.Views.HyperlinkSettingsDialog.txtUrlPlaceholder": "Մուտքագրել վեբ հասցեն կամ ընտրել ֆայլը",
   "PDFE.Views.ImageSettings.strTransparency": "Անթափանցիկություն",
   "PDFE.Views.ImageSettings.textAdvanced": "Ցուցադրել լրացուցիչ կարգավորումները",

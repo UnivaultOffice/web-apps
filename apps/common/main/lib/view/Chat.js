@@ -252,7 +252,7 @@ define([
                 return '';
             });
 
-            if (message.length<2026 || message.search(/\S{255,}/)<0)
+if (message.length<1000 || message.search(/\S{255,}/)<0)
                 message.replace(Common.Utils.hostnameStrongRe, function(subStr) {
                     var result = /[\.,\?\+;:=!\(\)]+$/.exec(subStr);
                     if (result)

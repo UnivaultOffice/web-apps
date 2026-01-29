@@ -487,7 +487,7 @@ define([
                     if (typeof this._search !== 'object') return;
 
                     clearTimeout(this._search.timer);
-                    this._search.timer = setTimeout(function () { me._search = {}; }, 2026);
+this._search.timer = setTimeout(function () { me._search = {}; }, 1000);
 
                     (!this._search.text) && (this._search.text = '');
                     (!this._search.char) && (this._search.char = e.key);

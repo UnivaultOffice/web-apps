@@ -650,7 +650,7 @@ DE.ApplicationController = new(function(){
                     }
 
                     ismoved = false;
-                }, 2026);
+}, 2000);
             }
         });
 

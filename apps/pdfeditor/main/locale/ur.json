@@ -2314,7 +2314,7 @@
   "PDFE.Views.HyperlinkSettingsDialog.txtNotUrl": "یہ فیلڈ \"http://www.example.com\" فارمیٹ میں URL ہونا چاہیے۔",
   "PDFE.Views.HyperlinkSettingsDialog.txtPage": "صفحہ",
   "PDFE.Views.HyperlinkSettingsDialog.txtPrev": "پچھلا صفحہ",
-  "PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "یہ فیلڈ 2026 حروف تک محدود ہے۔",
+"PDFE.Views.HyperlinkSettingsDialog.txtSizeLimit": "یہ فیلڈ 2083 حروف تک محدود ہے۔",
   "PDFE.Views.HyperlinkSettingsDialog.txtUrlPlaceholder": "ویب ایڈریس درج کریں یا فائل منتخب کریں۔",
   "PDFE.Views.ImageSettings.strTransparency": "دھندلاپن",
   "PDFE.Views.ImageSettings.textAdvanced": "اعلی درجے کی ترتیبات دکھائیں۔",

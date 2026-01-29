@@ -698,10 +698,10 @@ define([
                     if ((id==Asc.c_oAscAsyncAction['Save'] || id==Asc.c_oAscAsyncAction['ForceSaveButton']) && !this.appOptions.isOffline) {
                         if (this._state.fastCoauth && this._state.usersCount>1) {
                             me._state.timerSave = setTimeout(function () {
-                                me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 2026);
+me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 3000);
                             }, 500);
                         } else
-                            me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 2026);
+me.getApplication().getController('Statusbar').setStatusCaption(me.textChangesSaved, false, 3000);
                     } else
                         this.getApplication().getController('Statusbar').setStatusCaption('');
                 }
@@ -1342,7 +1342,7 @@ define([
                         this.tooltip && this.tooltip.getBSTip().$tip.css('z-index', 10000);
                         return;
                     case Asc.c_oAscError.ID.CanNotPasteImage:
-                        this.showTips([this.errorCannotPasteImg], {timeout: 2026, hideCloseTip: true});
+this.showTips([this.errorCannotPasteImg], {timeout: 7000, hideCloseTip: true});
                         return;
                     case Asc.c_oAscError.ID.UpdateVersion:
                         Common.UI.TooltipManager.showTip('updateVersion');

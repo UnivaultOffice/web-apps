@@ -845,7 +845,7 @@ define([
                     setTimeout(function () {
                         me.$window.addClass('notransform');
                         me.fireEvent('show', me);
-                    }, (this.initConfig.modal) ? 2026 : 350);
+}, (this.initConfig.modal) ? 1000 : 350);
                 } else {
                     this.$window.css({opacity: 1});
                     this.$window.addClass('notransform');

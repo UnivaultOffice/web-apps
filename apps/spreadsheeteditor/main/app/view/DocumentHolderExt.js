@@ -740,7 +740,7 @@ define([], function () {
                             caption: this.txtDateLong,
                             template: numFormatTemplate,
                             format: 'MMMM d yyyy',
-                            exampleval: 'April 9 2026',
+exampleval: 'April 9 1900',
                             value: Asc.c_oAscNumFormatType.Date
                         },
                         {

@@ -205,7 +205,7 @@ define([
                 width: 98,
                 defaultUnit : "",
                 value: '1',
-                maxValue: 2026,
+maxValue: 9999,
                 minValue: 0,
                 allowDecimal: false,
                 maskExp: /[0-9]/

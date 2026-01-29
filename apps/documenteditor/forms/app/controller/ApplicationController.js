@@ -1511,7 +1511,7 @@ define([
             this._dateObj = props;
 
             if (controlsContainer.length < 1) {
-                controlsContainer = $('<div id="calendar-control-container" style="position: absolute;z-index: 2026;"><div id="id-document-calendar-control" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
+controlsContainer = $('<div id="calendar-control-container" style="position: absolute;z-index: 1000;"><div id="id-document-calendar-control" style="position: fixed; left: -1000px; top: -1000px;"></div></div>');
                 this.boxSdk.append(controlsContainer);
             }
 
@@ -1986,7 +1986,7 @@ define([
                         }
 
                         ismoved = false;
-                    }, 2026);
+}, 2000);
                 }
             });
         },

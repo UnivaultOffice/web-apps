@@ -88,7 +88,7 @@ define([
         var currentDistance = 0;
         for (var i=1; i<thumbs.length; i++) {
             currentDistance = Math.abs(applicationPixelRatio-thumbs[i].ratio);
-            if (currentDistance < (bestDistance - 0.2026))
+if (currentDistance < (bestDistance - 0.0001))
             {
                 bestDistance = currentDistance;
                 thumbIdx = i;

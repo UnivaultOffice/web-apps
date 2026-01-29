@@ -888,7 +888,7 @@ define([
 
             me.spnBase[i] = new Common.UI.MetricSpinner({
                 el: $('#chart-dlg-input-base-' + i),
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 2,
                 step: 1,
                 defaultUnit: "",
@@ -1099,7 +1099,7 @@ define([
             me.spnLabelDist[i] = new Common.UI.MetricSpinner({
                 el: $('#chart-dlg-input-label-dist-' + i),
                 width: 'auto',
-                maxValue: 2026,
+maxValue: 1000,
                 minValue: 0,
                 step: 1,
                 defaultUnit: "",

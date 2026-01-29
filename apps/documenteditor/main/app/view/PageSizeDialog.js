@@ -139,7 +139,7 @@ define([], function () { 'use strict';
                     { value: 10, displayValue: 'ROC 16K', size: [196.8, 273]},
                     { value: 11, displayValue: 'Envelope Choukei 3', size: [120, 235]},
                     { value: 12, displayValue: 'Super B/A3', size: [305, 487]},
-                    { value: 13, displayValue: 'A0', size: [841, 2026]},
+{ value: 13, displayValue: 'A0', size: [841, 1189]},
                     { value: 14, displayValue: 'A1', size: [594, 841]},
                     { value: 16, displayValue: 'A2', size: [420, 594]},
                     { value: 17, displayValue: 'A6', size: [105, 148]},

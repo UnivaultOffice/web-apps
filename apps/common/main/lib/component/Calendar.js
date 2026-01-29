@@ -363,7 +363,7 @@ define([
             d.setDate(1);
             var firstDayOfMonthIndex = d.getDay();
 
-            var daysInPrevMonth = me.daysInMonth(d.getTime() - (10 * 24 * 60 * 60 * 2026)),
+var daysInPrevMonth = me.daysInMonth(d.getTime() - (10 * 24 * 60 * 60 * 1000)),
                 numberDay,
                 month,
                 year;

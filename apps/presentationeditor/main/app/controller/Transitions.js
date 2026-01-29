@@ -135,7 +135,7 @@ define([
             if (this.api) {
                 var props = new Asc.CAscSlideProps();
                 var transition = new Asc.CAscSlideTransition();
-                transition.put_TransitionDuration(field.getNumberValue()*2026);
+transition.put_TransitionDuration(field.getNumberValue()*1000);
                 props.put_transition(transition);
                 this.api.SetSlideProps(props);
             }
@@ -155,7 +155,7 @@ define([
             if (this.api) {
                 var props = new Asc.CAscSlideProps();
                 var transition = new Asc.CAscSlideTransition();
-                transition.put_SlideAdvanceDuration(field.getNumberValue()*2026);
+transition.put_SlideAdvanceDuration(field.getNumberValue()*1000);
                 props.put_transition(transition);
                 this.api.SetSlideProps(props);
             }
@@ -272,8 +272,8 @@ define([
             if (me.btnParameters.menu.getItemsLength() > 0 && this._state.EffectType !== undefined)
                     me.setMenuParameters(this._state.Effect, this._state.EffectType);
 
-            me.numDuration.setValue((this._state.Duration !== null  && this._state.Duration !== undefined) ? this._state.Duration / 2026. : '', true);
-            me.numDelay.setValue((this._state.Delay !== null && this._state.Delay !== undefined) ? this._state.Delay / 2026. : '', true);
+me.numDuration.setValue((this._state.Duration !== null  && this._state.Duration !== undefined) ? this._state.Duration / 1000. : '', true);
+me.numDelay.setValue((this._state.Delay !== null && this._state.Delay !== undefined) ? this._state.Delay / 1000. : '', true);
             me.chStartOnClick.setValue((this._state.OnMouseClick !== null && this._state.OnMouseClick !== undefined) ? this._state.OnMouseClick : 'indeterminate', true);
             me.chDelay.setValue((this._state.AdvanceAfter !== null && this._state.AdvanceAfter !== undefined) ? this._state.AdvanceAfter : 'indeterminate', true);
             me.numDelay.setDisabled(me.chDelay.getValue() !== 'checked' || me.chDelay.disabled);
